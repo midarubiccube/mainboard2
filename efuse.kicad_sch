@@ -65,6 +65,57 @@
         )
       )
     )
+    (symbol "Device:C" (pin_numbers hide) (pin_names (offset 0.254)) (in_bom yes) (on_board yes)
+      (property "Reference" "C" (at 0.635 2.54 0)
+        (effects (font (size 1.27 1.27)) (justify left))
+      )
+      (property "Value" "C" (at 0.635 -2.54 0)
+        (effects (font (size 1.27 1.27)) (justify left))
+      )
+      (property "Footprint" "" (at 0.9652 -3.81 0)
+        (effects (font (size 1.27 1.27)) hide)
+      )
+      (property "Datasheet" "~" (at 0 0 0)
+        (effects (font (size 1.27 1.27)) hide)
+      )
+      (property "ki_keywords" "cap capacitor" (at 0 0 0)
+        (effects (font (size 1.27 1.27)) hide)
+      )
+      (property "ki_description" "Unpolarized capacitor" (at 0 0 0)
+        (effects (font (size 1.27 1.27)) hide)
+      )
+      (property "ki_fp_filters" "C_*" (at 0 0 0)
+        (effects (font (size 1.27 1.27)) hide)
+      )
+      (symbol "C_0_1"
+        (polyline
+          (pts
+            (xy -2.032 -0.762)
+            (xy 2.032 -0.762)
+          )
+          (stroke (width 0.508) (type default))
+          (fill (type none))
+        )
+        (polyline
+          (pts
+            (xy -2.032 0.762)
+            (xy 2.032 0.762)
+          )
+          (stroke (width 0.508) (type default))
+          (fill (type none))
+        )
+      )
+      (symbol "C_1_1"
+        (pin passive line (at 0 3.81 270) (length 2.794)
+          (name "~" (effects (font (size 1.27 1.27))))
+          (number "1" (effects (font (size 1.27 1.27))))
+        )
+        (pin passive line (at 0 -3.81 90) (length 2.794)
+          (name "~" (effects (font (size 1.27 1.27))))
+          (number "2" (effects (font (size 1.27 1.27))))
+        )
+      )
+    )
     (symbol "Device:R" (pin_numbers hide) (pin_names (offset 0)) (in_bom yes) (on_board yes)
       (property "Reference" "R" (at 2.032 0 90)
         (effects (font (size 1.27 1.27)))
@@ -917,6 +968,9 @@
   (junction (at 123.444 184.658) (diameter 0) (color 0 0 0 0)
     (uuid 0b2f162d-bf85-4cb7-a535-17ce658980f7)
   )
+  (junction (at 100.584 99.06) (diameter 0) (color 0 0 0 0)
+    (uuid 0e3e35d9-6003-42fc-b2a7-92e1c9d88251)
+  )
   (junction (at 38.354 176.53) (diameter 0) (color 0 0 0 0)
     (uuid 1144627f-d38e-4a8f-baeb-919afe3aa477)
   )
@@ -1267,7 +1321,7 @@
     (stroke (width 0) (type default))
     (uuid 6f28f9cd-0c79-46a4-a924-a4546ded53a4)
   )
-  (wire (pts (xy 104.14 99.06) (xy 120.65 99.06))
+  (wire (pts (xy 115.316 99.06) (xy 120.65 99.06))
     (stroke (width 0) (type default))
     (uuid 70e49b70-7c4c-4c59-9042-5402d89046c0)
   )
@@ -1319,10 +1373,6 @@
     (stroke (width 0) (type default))
     (uuid 90cda71b-069c-46b6-b0d8-f2eecd8279a4)
   )
-  (wire (pts (xy 78.74 99.06) (xy 93.726 99.06))
-    (stroke (width 0) (type default))
-    (uuid 9129b212-faf4-471a-b1f5-6a56b8e933c3)
-  )
   (wire (pts (xy 128.27 99.06) (xy 125.73 99.06))
     (stroke (width 0) (type default))
     (uuid 95211b8b-dbfc-4506-8b63-3d3986f4ecf4)
@@ -1334,6 +1384,10 @@
   (wire (pts (xy 123.19 42.164) (xy 121.92 42.164))
     (stroke (width 0) (type default))
     (uuid 99055879-e727-46aa-95f5-b63cd80f93bd)
+  )
+  (wire (pts (xy 100.584 99.06) (xy 105.156 99.06))
+    (stroke (width 0) (type default))
+    (uuid 9a9728e5-7a2a-430d-bf17-7e82bab47059)
   )
   (wire (pts (xy 85.09 81.534) (xy 82.55 81.534))
     (stroke (width 0) (type default))
@@ -1387,6 +1441,10 @@
     (stroke (width 0) (type default))
     (uuid ab94d08e-5dd5-4fbd-b0b6-3e823cab4f2f)
   )
+  (wire (pts (xy 100.076 98.806) (xy 100.076 99.06))
+    (stroke (width 0) (type default))
+    (uuid ac02f7e9-506f-4dcb-9d84-a567ca37182d)
+  )
   (wire (pts (xy 123.19 62.484) (xy 123.19 59.944))
     (stroke (width 0) (type default))
     (uuid b02fdd95-08d8-43cf-a939-38f27897a002)
@@ -1411,6 +1469,10 @@
     (stroke (width 0) (type default))
     (uuid ba789c34-bd5c-4d54-b899-3562c463b363)
   )
+  (wire (pts (xy 100.584 98.806) (xy 100.076 98.806))
+    (stroke (width 0) (type default))
+    (uuid bbc583d9-d3e2-410d-b7d4-2da364abacb2)
+  )
   (wire (pts (xy 105.41 192.278) (xy 105.41 186.69))
     (stroke (width 0) (type default))
     (uuid bf2040a1-157d-4b08-9885-2e94a0108714)
@@ -1426,6 +1488,10 @@
   (wire (pts (xy 82.55 81.534) (xy 82.55 62.484))
     (stroke (width 0) (type default))
     (uuid c7fb7cc4-1d47-4544-9165-8e2673349381)
+  )
+  (wire (pts (xy 100.584 99.06) (xy 100.584 98.806))
+    (stroke (width 0) (type default))
+    (uuid cc147b35-5104-4ea0-9c1a-32d60fe5b4b7)
   )
   (wire (pts (xy 85.09 84.074) (xy 85.09 86.614))
     (stroke (width 0) (type default))
@@ -1446,6 +1512,10 @@
   (wire (pts (xy 37.084 191.008) (xy 38.354 191.008))
     (stroke (width 0) (type default))
     (uuid e18097b3-7bc9-4fd3-be26-ffca1fa4de34)
+  )
+  (wire (pts (xy 100.076 99.06) (xy 78.74 99.06))
+    (stroke (width 0) (type default))
+    (uuid e27abf94-4cbe-4ab2-882e-a54f28715b94)
   )
   (wire (pts (xy 67.31 24.384) (xy 123.19 24.384))
     (stroke (width 0) (type default))
@@ -1675,7 +1745,7 @@
     (effects (font (size 1.27 1.27)) (justify right))
     (uuid 22d85cce-abe8-40a3-8640-da85e74f709e)
   )
-  (hierarchical_label "VOUT" (shape input) (at 93.726 99.06 0) (fields_autoplaced)
+  (hierarchical_label "VOUT" (shape input) (at 105.156 99.06 0) (fields_autoplaced)
     (effects (font (size 1.27 1.27)) (justify left))
     (uuid 4ea19098-739b-4dea-96a8-ffe15292c001)
   )
@@ -1715,7 +1785,7 @@
           (reference "R12") (unit 1)
         )
         (path "/106e5476-7cb9-4c2e-b827-12558fe0d8df/3dd73459-ae44-4df8-ae56-545e20d02353"
-          (reference "R28") (unit 1)
+          (reference "R27") (unit 1)
         )
       )
       (project "MOSFET版電源管理基板"
@@ -1734,7 +1804,7 @@
   (symbol (lib_id "Device:R") (at 87.884 165.608 90) (mirror x) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid 070f748c-1c56-466f-8757-3acc459549b7)
-    (property "Reference" "R23" (at 87.884 163.068 90)
+    (property "Reference" "R49" (at 87.884 163.068 90)
       (effects (font (size 1.27 1.27)))
     )
     (property "Value" "10kΩ" (at 87.884 161.798 90)
@@ -1751,7 +1821,7 @@
     (instances
       (project "mainboard2"
         (path "/106e5476-7cb9-4c2e-b827-12558fe0d8df/3dd73459-ae44-4df8-ae56-545e20d02353"
-          (reference "R23") (unit 1)
+          (reference "R49") (unit 1)
         )
       )
       (project "MOSFET版電源管理基板"
@@ -1922,7 +1992,7 @@
           (reference "J21") (unit 1)
         )
         (path "/106e5476-7cb9-4c2e-b827-12558fe0d8df/3dd73459-ae44-4df8-ae56-545e20d02353"
-          (reference "J14") (unit 1)
+          (reference "J1") (unit 1)
         )
         (path "/106e5476-7cb9-4c2e-b827-12558fe0d8df/d229f3c8-5054-431f-81e9-90af16acef5a"
           (reference "J12") (unit 1)
@@ -1949,7 +2019,7 @@
   (symbol (lib_id "Device:R") (at 108.204 179.578 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid 1b63e00a-59ef-44c1-a7c6-8fc86a21ced3)
-    (property "Reference" "R24" (at 105.664 179.578 90)
+    (property "Reference" "R45" (at 105.664 179.578 90)
       (effects (font (size 1.27 1.27)))
     )
     (property "Value" "10Ω" (at 104.394 179.578 90)
@@ -1966,7 +2036,7 @@
     (instances
       (project "mainboard2"
         (path "/106e5476-7cb9-4c2e-b827-12558fe0d8df/3dd73459-ae44-4df8-ae56-545e20d02353"
-          (reference "R24") (unit 1)
+          (reference "R45") (unit 1)
         )
       )
       (project "MOSFET版電源管理基板"
@@ -2021,7 +2091,7 @@
   (symbol (lib_id "Device:R") (at 108.204 188.468 180) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid 242a9412-ccce-43b7-bbeb-c936ab5d4d88)
-    (property "Reference" "R25" (at 110.744 188.468 90)
+    (property "Reference" "R44" (at 110.744 188.468 90)
       (effects (font (size 1.27 1.27)))
     )
     (property "Value" "10kΩ" (at 112.014 188.468 90)
@@ -2038,7 +2108,7 @@
     (instances
       (project "mainboard2"
         (path "/106e5476-7cb9-4c2e-b827-12558fe0d8df/3dd73459-ae44-4df8-ae56-545e20d02353"
-          (reference "R25") (unit 1)
+          (reference "R44") (unit 1)
         )
       )
       (project "MOSFET版電源管理基板"
@@ -2102,7 +2172,7 @@
           (reference "Q2") (unit 1)
         )
         (path "/106e5476-7cb9-4c2e-b827-12558fe0d8df/3dd73459-ae44-4df8-ae56-545e20d02353"
-          (reference "Q4") (unit 1)
+          (reference "Q2") (unit 1)
         )
       )
       (project "MOSFET版電源管理基板"
@@ -2136,7 +2206,7 @@
           (reference "R16") (unit 1)
         )
         (path "/106e5476-7cb9-4c2e-b827-12558fe0d8df/3dd73459-ae44-4df8-ae56-545e20d02353"
-          (reference "R33") (unit 1)
+          (reference "R29") (unit 1)
         )
       )
       (project "MOSFET版電源管理基板"
@@ -2243,7 +2313,7 @@
           (reference "U2") (unit 1)
         )
         (path "/106e5476-7cb9-4c2e-b827-12558fe0d8df/3dd73459-ae44-4df8-ae56-545e20d02353"
-          (reference "U5") (unit 1)
+          (reference "U2") (unit 1)
         )
       )
       (project "MOSFET版電源管理基板"
@@ -2257,7 +2327,7 @@
   (symbol (lib_id "Device:R") (at 123.444 180.848 0) (mirror x) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid 352005d0-adca-4193-bb5e-2d6bd02eaf5d)
-    (property "Reference" "R27" (at 120.904 180.848 90)
+    (property "Reference" "R59" (at 120.904 180.848 90)
       (effects (font (size 1.27 1.27)))
     )
     (property "Value" "10kΩ" (at 119.634 180.848 90)
@@ -2274,7 +2344,7 @@
     (instances
       (project "mainboard2"
         (path "/106e5476-7cb9-4c2e-b827-12558fe0d8df/3dd73459-ae44-4df8-ae56-545e20d02353"
-          (reference "R27") (unit 1)
+          (reference "R59") (unit 1)
         )
       )
       (project "MOSFET版電源管理基板"
@@ -2318,12 +2388,41 @@
           (reference "U3") (unit 1)
         )
         (path "/106e5476-7cb9-4c2e-b827-12558fe0d8df/3dd73459-ae44-4df8-ae56-545e20d02353"
-          (reference "U6") (unit 1)
+          (reference "U1") (unit 1)
         )
       )
       (project "MOSFET版電源管理基板"
         (path "/608995ae-e0cf-4f60-8ee6-f47672990c68"
           (reference "U2") (unit 1)
+        )
+      )
+    )
+  )
+
+  (symbol (lib_id "Device:C") (at 100.584 102.87 0) (unit 1)
+    (in_bom yes) (on_board yes) (dnp no)
+    (uuid 3cf9b63a-4c9c-4837-bda2-7760a21b1480)
+    (property "Reference" "C5" (at 95.504 100.33 0)
+      (effects (font (size 1.27 1.27)) (justify left))
+    )
+    (property "Value" "C" (at 95.504 102.87 0)
+      (effects (font (size 1.27 1.27)) (justify left))
+    )
+    (property "Footprint" "Capacitor_SMD:CP_Elec_10x10.5" (at 101.5492 106.68 0)
+      (effects (font (size 1.27 1.27)) hide)
+    )
+    (property "Datasheet" "~" (at 100.584 102.87 0)
+      (effects (font (size 1.27 1.27)) hide)
+    )
+    (pin "1" (uuid 5470e4d4-4aad-45cb-9a56-8331038a95f1))
+    (pin "2" (uuid cba45395-4109-4c14-bb24-2de34dcfc5f2))
+    (instances
+      (project "mainboard2"
+        (path "/106e5476-7cb9-4c2e-b827-12558fe0d8df"
+          (reference "C5") (unit 1)
+        )
+        (path "/106e5476-7cb9-4c2e-b827-12558fe0d8df/3dd73459-ae44-4df8-ae56-545e20d02353"
+          (reference "C10") (unit 1)
         )
       )
     )
@@ -2392,10 +2491,35 @@
     )
   )
 
+  (symbol (lib_id "power:GND1") (at 100.584 106.68 0) (unit 1)
+    (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
+    (uuid 49479575-22a8-4662-92b5-529bee576841)
+    (property "Reference" "#PWR043" (at 100.584 113.03 0)
+      (effects (font (size 1.27 1.27)) hide)
+    )
+    (property "Value" "GND1" (at 100.584 111.76 0)
+      (effects (font (size 1.27 1.27)))
+    )
+    (property "Footprint" "" (at 100.584 106.68 0)
+      (effects (font (size 1.27 1.27)) hide)
+    )
+    (property "Datasheet" "" (at 100.584 106.68 0)
+      (effects (font (size 1.27 1.27)) hide)
+    )
+    (pin "1" (uuid 1a4dd435-7d2b-47ac-a058-8b9c251e9de7))
+    (instances
+      (project "mainboard2"
+        (path "/106e5476-7cb9-4c2e-b827-12558fe0d8df/3dd73459-ae44-4df8-ae56-545e20d02353"
+          (reference "#PWR043") (unit 1)
+        )
+      )
+    )
+  )
+
   (symbol (lib_id "Device:R") (at 31.75 184.15 90) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid 500fe1ee-2941-4979-9032-267079c33992)
-    (property "Reference" "R12" (at 31.75 184.15 90)
+    (property "Reference" "R56" (at 31.75 184.15 90)
       (effects (font (size 1.27 1.27)))
     )
     (property "Value" "10kΩ" (at 31.75 186.69 90)
@@ -2412,7 +2536,7 @@
     (instances
       (project "mainboard2"
         (path "/106e5476-7cb9-4c2e-b827-12558fe0d8df/3dd73459-ae44-4df8-ae56-545e20d02353"
-          (reference "R12") (unit 1)
+          (reference "R56") (unit 1)
         )
       )
       (project "MOSFET版電源管理基板"
@@ -2434,7 +2558,7 @@
   (symbol (lib_id "SamacSys_Parts:IRFML8244TRPBF") (at 103.124 184.658 0) (mirror y) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid 5398f7f8-ccb4-4f0a-9bed-22cfb18f6f4a)
-    (property "Reference" "Q7" (at 92.964 177.038 0)
+    (property "Reference" "Q6" (at 92.964 177.038 0)
       (effects (font (size 1.27 1.27)))
     )
     (property "Value" "IRFML8244TRPBF" (at 92.964 179.578 0)
@@ -2470,7 +2594,7 @@
     (instances
       (project "mainboard2"
         (path "/106e5476-7cb9-4c2e-b827-12558fe0d8df/3dd73459-ae44-4df8-ae56-545e20d02353"
-          (reference "Q7") (unit 1)
+          (reference "Q6") (unit 1)
         )
       )
       (project "MOSFET版電源管理基板"
@@ -2522,7 +2646,7 @@
   (symbol (lib_id "SamacSys_Parts:IRFML8244TRPBF") (at 87.63 127 90) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid 5fa236c8-c6d6-42c4-bb10-b1763f019bc6)
-    (property "Reference" "Q6" (at 93.98 119.38 0)
+    (property "Reference" "Q8" (at 93.98 119.38 0)
       (effects (font (size 1.27 1.27)))
     )
     (property "Value" "IRFML8244TRPBF" (at 96.52 118.11 0)
@@ -2558,7 +2682,7 @@
     (instances
       (project "mainboard2"
         (path "/106e5476-7cb9-4c2e-b827-12558fe0d8df/3dd73459-ae44-4df8-ae56-545e20d02353"
-          (reference "Q6") (unit 1)
+          (reference "Q8") (unit 1)
         )
       )
       (project "MOSFET版電源管理基板"
@@ -2646,21 +2770,21 @@
     (property "Value" "510Ω 1W" (at 81.28 105.41 0)
       (effects (font (size 1.27 1.27)) (justify left))
     )
-    (property "Footprint" "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P10.16mm_Horizontal" (at 76.962 102.87 90)
+    (property "Footprint" "Resistor_SMD:R_2512_6332Metric" (at 76.962 102.87 90)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Datasheet" "~" (at 78.74 102.87 0)
       (effects (font (size 1.27 1.27)) hide)
     )
-    (pin "1" (uuid bd3896f0-b042-47c5-8bfb-ffa4c61a0813))
-    (pin "2" (uuid 26f8c968-9b6b-4b1b-946e-41681dc24d9b))
+    (pin "1" (uuid 8831e6c3-99a1-49ad-9283-d7424b27c58f))
+    (pin "2" (uuid 368320db-428c-4d0a-8a9d-ade97bcf0beb))
     (instances
       (project "mainboard2"
         (path "/106e5476-7cb9-4c2e-b827-12558fe0d8df"
           (reference "R11") (unit 1)
         )
         (path "/106e5476-7cb9-4c2e-b827-12558fe0d8df/3dd73459-ae44-4df8-ae56-545e20d02353"
-          (reference "R21") (unit 1)
+          (reference "R60") (unit 1)
         )
       )
       (project "MOSFET版電源管理基板"
@@ -2671,19 +2795,19 @@
     )
   )
 
-  (symbol (lib_id "power:GND1") (at 104.14 99.06 0) (unit 1)
+  (symbol (lib_id "power:GND1") (at 115.316 99.06 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
     (uuid 7f6d8aa4-09dc-4efa-b3d0-8b4aef6aae7e)
-    (property "Reference" "#PWR068" (at 104.14 105.41 0)
+    (property "Reference" "#PWR068" (at 115.316 105.41 0)
       (effects (font (size 1.27 1.27)) hide)
     )
-    (property "Value" "GND1" (at 104.14 104.14 0)
+    (property "Value" "GND1" (at 115.316 104.14 0)
       (effects (font (size 1.27 1.27)))
     )
-    (property "Footprint" "" (at 104.14 99.06 0)
+    (property "Footprint" "" (at 115.316 99.06 0)
       (effects (font (size 1.27 1.27)) hide)
     )
-    (property "Datasheet" "" (at 104.14 99.06 0)
+    (property "Datasheet" "" (at 115.316 99.06 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (pin "1" (uuid 8699cab0-efb8-4023-8a0c-9c023ecd48d2))
@@ -2752,7 +2876,7 @@
           (reference "R9") (unit 1)
         )
         (path "/106e5476-7cb9-4c2e-b827-12558fe0d8df/3dd73459-ae44-4df8-ae56-545e20d02353"
-          (reference "R19") (unit 1)
+          (reference "R51") (unit 1)
         )
       )
       (project "MOSFET版電源管理基板"
@@ -2840,7 +2964,7 @@
   (symbol (lib_id "Device:R") (at 109.474 165.608 90) (mirror x) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid 8b8a3247-e1cb-422d-8aef-54ddd1f07d72)
-    (property "Reference" "R26" (at 109.474 163.068 90)
+    (property "Reference" "R43" (at 109.474 163.068 90)
       (effects (font (size 1.27 1.27)))
     )
     (property "Value" "10kΩ" (at 109.474 161.798 90)
@@ -2857,7 +2981,7 @@
     (instances
       (project "mainboard2"
         (path "/106e5476-7cb9-4c2e-b827-12558fe0d8df/3dd73459-ae44-4df8-ae56-545e20d02353"
-          (reference "R26") (unit 1)
+          (reference "R43") (unit 1)
         )
       )
       (project "MOSFET版電源管理基板"
@@ -2915,7 +3039,7 @@
           (reference "IC1") (unit 1)
         )
         (path "/106e5476-7cb9-4c2e-b827-12558fe0d8df/3dd73459-ae44-4df8-ae56-545e20d02353"
-          (reference "IC3") (unit 1)
+          (reference "IC2") (unit 1)
         )
       )
       (project "MOSFET版電源管理基板"
@@ -2949,7 +3073,7 @@
           (reference "R5") (unit 1)
         )
         (path "/106e5476-7cb9-4c2e-b827-12558fe0d8df/3dd73459-ae44-4df8-ae56-545e20d02353"
-          (reference "R15") (unit 1)
+          (reference "R48") (unit 1)
         )
       )
       (project "MOSFET版電源管理基板"
@@ -3075,7 +3199,7 @@
           (reference "IC3") (unit 1)
         )
         (path "/106e5476-7cb9-4c2e-b827-12558fe0d8df/3dd73459-ae44-4df8-ae56-545e20d02353"
-          (reference "IC5") (unit 1)
+          (reference "IC4") (unit 1)
         )
       )
       (project "MOSFET版電源管理基板"
@@ -3188,7 +3312,7 @@
   (symbol (lib_id "Device:R") (at 148.844 188.468 180) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid b0a74450-064c-4809-9c24-5672df135379)
-    (property "Reference" "R36" (at 151.384 188.468 90)
+    (property "Reference" "R53" (at 151.384 188.468 90)
       (effects (font (size 1.27 1.27)))
     )
     (property "Value" "10kΩ" (at 152.654 188.468 90)
@@ -3205,7 +3329,7 @@
     (instances
       (project "mainboard2"
         (path "/106e5476-7cb9-4c2e-b827-12558fe0d8df/3dd73459-ae44-4df8-ae56-545e20d02353"
-          (reference "R36") (unit 1)
+          (reference "R53") (unit 1)
         )
       )
       (project "MOSFET版電源管理基板"
@@ -3286,7 +3410,7 @@
           (reference "R4") (unit 1)
         )
         (path "/106e5476-7cb9-4c2e-b827-12558fe0d8df/3dd73459-ae44-4df8-ae56-545e20d02353"
-          (reference "R14") (unit 1)
+          (reference "R42") (unit 1)
         )
       )
       (project "MOSFET版電源管理基板"
@@ -3375,7 +3499,7 @@
           (reference "IC2") (unit 1)
         )
         (path "/106e5476-7cb9-4c2e-b827-12558fe0d8df/3dd73459-ae44-4df8-ae56-545e20d02353"
-          (reference "IC4") (unit 1)
+          (reference "IC1") (unit 1)
         )
       )
       (project "MOSFET版電源管理基板"
@@ -3409,7 +3533,7 @@
           (reference "R15") (unit 1)
         )
         (path "/106e5476-7cb9-4c2e-b827-12558fe0d8df/3dd73459-ae44-4df8-ae56-545e20d02353"
-          (reference "R32") (unit 1)
+          (reference "R23") (unit 1)
         )
       )
       (project "MOSFET版電源管理基板"
@@ -3470,7 +3594,7 @@
           (reference "Q3") (unit 1)
         )
         (path "/106e5476-7cb9-4c2e-b827-12558fe0d8df/3dd73459-ae44-4df8-ae56-545e20d02353"
-          (reference "Q5") (unit 1)
+          (reference "Q1") (unit 1)
         )
       )
       (project "MOSFET版電源管理基板"
@@ -3504,7 +3628,7 @@
           (reference "R13") (unit 1)
         )
         (path "/106e5476-7cb9-4c2e-b827-12558fe0d8df/3dd73459-ae44-4df8-ae56-545e20d02353"
-          (reference "R29") (unit 1)
+          (reference "R22") (unit 1)
         )
       )
       (project "MOSFET版電源管理基板"
@@ -3523,7 +3647,7 @@
   (symbol (lib_id "Device:R") (at 82.804 180.848 0) (mirror x) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid d2643991-76d7-4c68-b1d9-e22f34de4268)
-    (property "Reference" "R22" (at 80.264 180.848 90)
+    (property "Reference" "R46" (at 80.264 180.848 90)
       (effects (font (size 1.27 1.27)))
     )
     (property "Value" "10kΩ" (at 78.994 180.848 90)
@@ -3540,7 +3664,7 @@
     (instances
       (project "mainboard2"
         (path "/106e5476-7cb9-4c2e-b827-12558fe0d8df/3dd73459-ae44-4df8-ae56-545e20d02353"
-          (reference "R22") (unit 1)
+          (reference "R46") (unit 1)
         )
       )
       (project "MOSFET版電源管理基板"
@@ -3582,7 +3706,7 @@
           (reference "R6") (unit 1)
         )
         (path "/106e5476-7cb9-4c2e-b827-12558fe0d8df/3dd73459-ae44-4df8-ae56-545e20d02353"
-          (reference "R16") (unit 1)
+          (reference "R57") (unit 1)
         )
       )
       (project "MOSFET版電源管理基板"
@@ -3621,7 +3745,7 @@
           (reference "R14") (unit 1)
         )
         (path "/106e5476-7cb9-4c2e-b827-12558fe0d8df/3dd73459-ae44-4df8-ae56-545e20d02353"
-          (reference "R31") (unit 1)
+          (reference "R28") (unit 1)
         )
       )
       (project "MOSFET版電源管理基板"
@@ -3640,7 +3764,7 @@
   (symbol (lib_id "SamacSys_Parts:IRFML8244TRPBF") (at 143.764 184.15 0) (mirror y) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid d9f84a57-8a65-492d-a58d-5e717dd7fbb6)
-    (property "Reference" "Q8" (at 133.604 176.53 0)
+    (property "Reference" "Q7" (at 133.604 176.53 0)
       (effects (font (size 1.27 1.27)))
     )
     (property "Value" "IRFML8244TRPBF" (at 133.604 179.07 0)
@@ -3676,7 +3800,7 @@
     (instances
       (project "mainboard2"
         (path "/106e5476-7cb9-4c2e-b827-12558fe0d8df/3dd73459-ae44-4df8-ae56-545e20d02353"
-          (reference "Q8") (unit 1)
+          (reference "Q7") (unit 1)
         )
       )
       (project "MOSFET版電源管理基板"
@@ -3814,7 +3938,7 @@
   (symbol (lib_id "SamacSys_Parts:TC74HC08APF") (at 40.64 173.99 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
     (uuid e26c0076-1121-41ac-afe2-b66aaf087c2d)
-    (property "Reference" "IC2" (at 53.34 166.37 0)
+    (property "Reference" "IC3" (at 53.34 166.37 0)
       (effects (font (size 1.27 1.27)))
     )
     (property "Value" "TC74HC08APF" (at 53.34 168.91 0)
@@ -3858,7 +3982,7 @@
     (instances
       (project "mainboard2"
         (path "/106e5476-7cb9-4c2e-b827-12558fe0d8df/3dd73459-ae44-4df8-ae56-545e20d02353"
-          (reference "IC2") (unit 1)
+          (reference "IC3") (unit 1)
         )
       )
       (project "MOSFET版電源管理基板"
@@ -3872,7 +3996,7 @@
   (symbol (lib_id "Device:R") (at 132.334 165.608 90) (mirror x) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid e590264e-508a-4b69-a943-26628f53d330)
-    (property "Reference" "R30" (at 132.334 163.068 90)
+    (property "Reference" "R47" (at 132.334 163.068 90)
       (effects (font (size 1.27 1.27)))
     )
     (property "Value" "10kΩ" (at 132.334 161.798 90)
@@ -3889,7 +4013,7 @@
     (instances
       (project "mainboard2"
         (path "/106e5476-7cb9-4c2e-b827-12558fe0d8df/3dd73459-ae44-4df8-ae56-545e20d02353"
-          (reference "R30") (unit 1)
+          (reference "R47") (unit 1)
         )
       )
       (project "MOSFET版電源管理基板"
@@ -3911,7 +4035,7 @@
   (symbol (lib_id "Device:R") (at 148.844 179.578 0) (mirror y) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid e59b8772-ec25-4311-b024-ccbd7df81e2a)
-    (property "Reference" "R35" (at 151.384 179.578 90)
+    (property "Reference" "R52" (at 151.384 179.578 90)
       (effects (font (size 1.27 1.27)))
     )
     (property "Value" "10Ω" (at 152.654 179.578 90)
@@ -3928,7 +4052,7 @@
     (instances
       (project "mainboard2"
         (path "/106e5476-7cb9-4c2e-b827-12558fe0d8df/3dd73459-ae44-4df8-ae56-545e20d02353"
-          (reference "R35") (unit 1)
+          (reference "R52") (unit 1)
         )
       )
       (project "MOSFET版電源管理基板"
@@ -3970,7 +4094,7 @@
           (reference "R8") (unit 1)
         )
         (path "/106e5476-7cb9-4c2e-b827-12558fe0d8df/3dd73459-ae44-4df8-ae56-545e20d02353"
-          (reference "R18") (unit 1)
+          (reference "R50") (unit 1)
         )
       )
       (project "MOSFET版電源管理基板"
@@ -3989,7 +4113,7 @@
   (symbol (lib_id "Device:R") (at 40.64 170.18 0) (mirror y) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid f2c89f54-7dfe-445c-955d-0122f9cb9311)
-    (property "Reference" "R13" (at 43.18 170.18 90)
+    (property "Reference" "R58" (at 43.18 170.18 90)
       (effects (font (size 1.27 1.27)))
     )
     (property "Value" "10kΩ" (at 44.45 170.18 90)
@@ -4006,7 +4130,7 @@
     (instances
       (project "mainboard2"
         (path "/106e5476-7cb9-4c2e-b827-12558fe0d8df/3dd73459-ae44-4df8-ae56-545e20d02353"
-          (reference "R13") (unit 1)
+          (reference "R58") (unit 1)
         )
       )
       (project "MOSFET版電源管理基板"
@@ -4066,7 +4190,7 @@
           (reference "PS1") (unit 1)
         )
         (path "/106e5476-7cb9-4c2e-b827-12558fe0d8df/3dd73459-ae44-4df8-ae56-545e20d02353"
-          (reference "PS2") (unit 1)
+          (reference "PS1") (unit 1)
         )
       )
       (project "MOSFET版電源管理基板"
@@ -4100,7 +4224,7 @@
           (reference "R17") (unit 1)
         )
         (path "/106e5476-7cb9-4c2e-b827-12558fe0d8df/3dd73459-ae44-4df8-ae56-545e20d02353"
-          (reference "R34") (unit 1)
+          (reference "R24") (unit 1)
         )
       )
       (project "MOSFET版電源管理基板"

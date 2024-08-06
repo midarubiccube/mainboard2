@@ -636,7 +636,7 @@
   (symbol (lib_id "Device:C") (at 162.56 99.06 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid 2d2d4805-6cbf-467b-b722-54d104ba2e44)
-    (property "Reference" "C41" (at 165.481 97.8916 0)
+    (property "Reference" "C47" (at 165.481 97.8916 0)
       (effects (font (size 1.27 1.27)) (justify left))
     )
     (property "Value" "100nF" (at 165.481 100.203 0)
@@ -653,7 +653,7 @@
     (instances
       (project "mainboard2"
         (path "/106e5476-7cb9-4c2e-b827-12558fe0d8df/33fff099-ce3b-49fb-b4f9-810325d1423e"
-          (reference "C41") (unit 1)
+          (reference "C47") (unit 1)
         )
       )
       (project "pihat_cooling"
@@ -708,7 +708,7 @@
   (symbol (lib_id "CAN:MCP251863") (at 120.65 101.6 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
     (uuid 780edb62-83e6-44d7-8390-8e13dc8ce82c)
-    (property "Reference" "U7" (at 120.65 77.47 0)
+    (property "Reference" "U6" (at 120.65 77.47 0)
       (effects (font (size 1.27 1.27)))
     )
     (property "Value" "MCP251863" (at 120.65 80.01 0)
@@ -751,7 +751,7 @@
     (instances
       (project "mainboard2"
         (path "/106e5476-7cb9-4c2e-b827-12558fe0d8df/33fff099-ce3b-49fb-b4f9-810325d1423e"
-          (reference "U7") (unit 1)
+          (reference "U6") (unit 1)
         )
       )
       (project "raspberrypi_canfd"
@@ -853,7 +853,7 @@
   (symbol (lib_id "Device:R") (at 179.07 78.74 270) (unit 1)
     (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
     (uuid 9c58a663-1012-4c52-bc30-1858aefbbd23)
-    (property "Reference" "R52" (at 179.07 72.39 90)
+    (property "Reference" "R33" (at 179.07 72.39 90)
       (effects (font (size 1.27 1.27)))
     )
     (property "Value" "120Ω" (at 179.07 74.93 90)
@@ -870,7 +870,7 @@
     (instances
       (project "mainboard2"
         (path "/106e5476-7cb9-4c2e-b827-12558fe0d8df/33fff099-ce3b-49fb-b4f9-810325d1423e"
-          (reference "R52") (unit 1)
+          (reference "R33") (unit 1)
         )
       )
       (project "test"
@@ -1031,7 +1031,7 @@
   (symbol (lib_id "Device:C") (at 102.87 121.92 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
     (uuid c454155d-03f0-4cc9-b26d-a2377df40227)
-    (property "Reference" "C40" (at 106.68 120.65 0)
+    (property "Reference" "C43" (at 106.68 120.65 0)
       (effects (font (size 1.27 1.27)) (justify left))
     )
     (property "Value" "0.1μF" (at 106.68 123.19 0)
@@ -1048,7 +1048,7 @@
     (instances
       (project "mainboard2"
         (path "/106e5476-7cb9-4c2e-b827-12558fe0d8df/33fff099-ce3b-49fb-b4f9-810325d1423e"
-          (reference "C40") (unit 1)
+          (reference "C43") (unit 1)
         )
       )
       (project "raspberrypi_canfd"
