@@ -5,6 +5,58 @@
   (paper "A4")
 
   (lib_symbols
+    (symbol "+3.3V_1" (power) (pin_names (offset 0)) (in_bom yes) (on_board yes)
+      (property "Reference" "#PWR" (at 0 -3.81 0)
+        (effects (font (size 1.27 1.27)) hide)
+      )
+      (property "Value" "+3.3V_1" (at 0 3.556 0)
+        (effects (font (size 1.27 1.27)))
+      )
+      (property "Footprint" "" (at 0 0 0)
+        (effects (font (size 1.27 1.27)) hide)
+      )
+      (property "Datasheet" "" (at 0 0 0)
+        (effects (font (size 1.27 1.27)) hide)
+      )
+      (property "ki_keywords" "global power" (at 0 0 0)
+        (effects (font (size 1.27 1.27)) hide)
+      )
+      (property "ki_description" "Power symbol creates a global label with name \"+3.3V\"" (at 0 0 0)
+        (effects (font (size 1.27 1.27)) hide)
+      )
+      (symbol "+3.3V_1_0_1"
+        (polyline
+          (pts
+            (xy -0.762 1.27)
+            (xy 0 2.54)
+          )
+          (stroke (width 0) (type default))
+          (fill (type none))
+        )
+        (polyline
+          (pts
+            (xy 0 0)
+            (xy 0 2.54)
+          )
+          (stroke (width 0) (type default))
+          (fill (type none))
+        )
+        (polyline
+          (pts
+            (xy 0 2.54)
+            (xy 0.762 1.27)
+          )
+          (stroke (width 0) (type default))
+          (fill (type none))
+        )
+      )
+      (symbol "+3.3V_1_1_1"
+        (pin power_in line (at 0 0 90) (length 0) hide
+          (name "+3.3V" (effects (font (size 1.27 1.27))))
+          (number "1" (effects (font (size 1.27 1.27))))
+        )
+      )
+    )
     (symbol "Connector:Conn_01x02_Socket" (pin_names (offset 1.016) hide) (in_bom yes) (on_board yes)
       (property "Reference" "J" (at 0 2.54 0)
         (effects (font (size 1.27 1.27)))
@@ -313,6 +365,88 @@
         )
       )
     )
+    (symbol "SamacSys_Parts:ACS711ELCTR-25AB-T" (pin_names (offset 0.762)) (in_bom yes) (on_board yes)
+      (property "Reference" "IC" (at 29.21 7.62 0)
+        (effects (font (size 1.27 1.27)) (justify left))
+      )
+      (property "Value" "ACS711ELCTR-25AB-T" (at 29.21 5.08 0)
+        (effects (font (size 1.27 1.27)) (justify left))
+      )
+      (property "Footprint" "ACS711ELCTR25ABT" (at 29.21 2.54 0)
+        (effects (font (size 1.27 1.27)) (justify left) hide)
+      )
+      (property "Datasheet" "https://www.allegromicro.com/-/media/files/datasheets/acs711-datasheet.pdf" (at 29.21 0 0)
+        (effects (font (size 1.27 1.27)) (justify left) hide)
+      )
+      (property "Description" "Hall-Effect Linear Current Sensor with Overcurrent Fault Output for <100 V Isolation Applications" (at 29.21 -2.54 0)
+        (effects (font (size 1.27 1.27)) (justify left) hide)
+      )
+      (property "Height" "1.75" (at 29.21 -5.08 0)
+        (effects (font (size 1.27 1.27)) (justify left) hide)
+      )
+      (property "RS Part Number" "" (at 29.21 -7.62 0)
+        (effects (font (size 1.27 1.27)) (justify left) hide)
+      )
+      (property "RS Price/Stock" "" (at 29.21 -10.16 0)
+        (effects (font (size 1.27 1.27)) (justify left) hide)
+      )
+      (property "Manufacturer_Name" "Allegro Microsystems" (at 29.21 -12.7 0)
+        (effects (font (size 1.27 1.27)) (justify left) hide)
+      )
+      (property "Manufacturer_Part_Number" "ACS711ELCTR-25AB-T" (at 29.21 -15.24 0)
+        (effects (font (size 1.27 1.27)) (justify left) hide)
+      )
+      (property "ki_description" "Hall-Effect Linear Current Sensor with Overcurrent Fault Output for <100 V Isolation Applications" (at 0 0 0)
+        (effects (font (size 1.27 1.27)) hide)
+      )
+      (symbol "ACS711ELCTR-25AB-T_0_0"
+        (pin passive line (at 0 0 0) (length 5.08)
+          (name "IP+_1" (effects (font (size 1.27 1.27))))
+          (number "1" (effects (font (size 1.27 1.27))))
+        )
+        (pin passive line (at 0 -2.54 0) (length 5.08)
+          (name "IP+_2" (effects (font (size 1.27 1.27))))
+          (number "2" (effects (font (size 1.27 1.27))))
+        )
+        (pin passive line (at 0 -5.08 0) (length 5.08)
+          (name "IP-_1" (effects (font (size 1.27 1.27))))
+          (number "3" (effects (font (size 1.27 1.27))))
+        )
+        (pin passive line (at 0 -7.62 0) (length 5.08)
+          (name "IP-_2" (effects (font (size 1.27 1.27))))
+          (number "4" (effects (font (size 1.27 1.27))))
+        )
+        (pin passive line (at 33.02 -7.62 180) (length 5.08)
+          (name "GND" (effects (font (size 1.27 1.27))))
+          (number "5" (effects (font (size 1.27 1.27))))
+        )
+        (pin passive line (at 33.02 -5.08 180) (length 5.08)
+          (name "~{FAULT}" (effects (font (size 1.27 1.27))))
+          (number "6" (effects (font (size 1.27 1.27))))
+        )
+        (pin passive line (at 33.02 -2.54 180) (length 5.08)
+          (name "VIOUT" (effects (font (size 1.27 1.27))))
+          (number "7" (effects (font (size 1.27 1.27))))
+        )
+        (pin passive line (at 33.02 0 180) (length 5.08)
+          (name "VCC" (effects (font (size 1.27 1.27))))
+          (number "8" (effects (font (size 1.27 1.27))))
+        )
+      )
+      (symbol "ACS711ELCTR-25AB-T_0_1"
+        (polyline
+          (pts
+            (xy 5.08 2.54)
+            (xy 27.94 2.54)
+            (xy 27.94 -10.16)
+            (xy 5.08 -10.16)
+            (xy 5.08 2.54)
+          )
+          (stroke (width 0.1524) (type default))
+          (fill (type none))
+        )
+      )
+    )
     (symbol "SamacSys_Parts:AP7375-50SA-7" (in_bom yes) (on_board yes)
       (property "Reference" "IC" (at 24.13 7.62 0)
         (effects (font (size 1.27 1.27)) (justify left top))
@@ -471,76 +605,6 @@
         (pin passive line (at 0 -10.16 0) (length 5.08)
           (name "+VOUT" (effects (font (size 1.27 1.27))))
           (number "6" (effects (font (size 1.27 1.27))))
-        )
-      )
-    )
-    (symbol "SamacSys_Parts:MLX91220KDC-ABR-050-SP" (in_bom yes) (on_board yes)
-      (property "Reference" "IC" (at 26.67 7.62 0)
-        (effects (font (size 1.27 1.27)) (justify left top))
-      )
-      (property "Value" "MLX91220KDC-ABR-050-SP" (at 26.67 5.08 0)
-        (effects (font (size 1.27 1.27)) (justify left top))
-      )
-      (property "Footprint" "SOIC127P600X173-8N" (at 26.67 -94.92 0)
-        (effects (font (size 1.27 1.27)) (justify left top) hide)
-      )
-      (property "Datasheet" "https://media.melexis.com/-/media/files/documents/datasheets/mlx91220-datasheet-melexis.pdf" (at 26.67 -194.92 0)
-        (effects (font (size 1.27 1.27)) (justify left top) hide)
-      )
-      (property "Height" "1.73" (at 26.67 -394.92 0)
-        (effects (font (size 1.27 1.27)) (justify left top) hide)
-      )
-      (property "RS Part Number" "" (at 26.67 -494.92 0)
-        (effects (font (size 1.27 1.27)) (justify left top) hide)
-      )
-      (property "RS Price/Stock" "" (at 26.67 -594.92 0)
-        (effects (font (size 1.27 1.27)) (justify left top) hide)
-      )
-      (property "Manufacturer_Name" "Melexis" (at 26.67 -694.92 0)
-        (effects (font (size 1.27 1.27)) (justify left top) hide)
-      )
-      (property "Manufacturer_Part_Number" "MLX91220KDC-ABR-050-SP" (at 26.67 -794.92 0)
-        (effects (font (size 1.27 1.27)) (justify left top) hide)
-      )
-      (property "ki_description" "Board Mount Current Sensors Gen2-InP-CurrentSensor-50AB.FSRatio-5V-2.4kVisolation" (at 0 0 0)
-        (effects (font (size 1.27 1.27)) hide)
-      )
-      (symbol "MLX91220KDC-ABR-050-SP_1_1"
-        (rectangle (start 5.08 2.54) (end 25.4 -10.16)
-          (stroke (width 0.254) (type default))
-          (fill (type background))
-        )
-        (pin passive line (at 0 0 0) (length 5.08)
-          (name "IP+_1" (effects (font (size 1.27 1.27))))
-          (number "1" (effects (font (size 1.27 1.27))))
-        )
-        (pin passive line (at 0 -2.54 0) (length 5.08)
-          (name "IP+_2" (effects (font (size 1.27 1.27))))
-          (number "2" (effects (font (size 1.27 1.27))))
-        )
-        (pin passive line (at 0 -5.08 0) (length 5.08)
-          (name "IP-_1" (effects (font (size 1.27 1.27))))
-          (number "3" (effects (font (size 1.27 1.27))))
-        )
-        (pin passive line (at 0 -7.62 0) (length 5.08)
-          (name "IP-_2" (effects (font (size 1.27 1.27))))
-          (number "4" (effects (font (size 1.27 1.27))))
-        )
-        (pin passive line (at 30.48 -7.62 180) (length 5.08)
-          (name "VSS" (effects (font (size 1.27 1.27))))
-          (number "5" (effects (font (size 1.27 1.27))))
-        )
-        (pin passive line (at 30.48 -5.08 180) (length 5.08)
-          (name "VREF" (effects (font (size 1.27 1.27))))
-          (number "6" (effects (font (size 1.27 1.27))))
-        )
-        (pin passive line (at 30.48 -2.54 180) (length 5.08)
-          (name "VOUT" (effects (font (size 1.27 1.27))))
-          (number "7" (effects (font (size 1.27 1.27))))
-        )
-        (pin passive line (at 30.48 0 180) (length 5.08)
-          (name "VDD" (effects (font (size 1.27 1.27))))
-          (number "8" (effects (font (size 1.27 1.27))))
         )
       )
     )
@@ -974,6 +1038,9 @@
   (junction (at 38.354 176.53) (diameter 0) (color 0 0 0 0)
     (uuid 1144627f-d38e-4a8f-baeb-919afe3aa477)
   )
+  (junction (at 145.288 89.154) (diameter 0) (color 0 0 0 0)
+    (uuid 147da36d-3099-4da1-bcb4-25405109bd86)
+  )
   (junction (at 123.19 57.404) (diameter 0) (color 0 0 0 0)
     (uuid 153d6853-d8bf-48ec-94fa-2512e1241923)
   )
@@ -982,9 +1049,6 @@
   )
   (junction (at 85.09 81.534) (diameter 0) (color 0 0 0 0)
     (uuid 23fd0e92-974a-42cb-a7ae-bbf6461d207b)
-  )
-  (junction (at 133.35 136.144) (diameter 0) (color 0 0 0 0)
-    (uuid 26e35b25-b616-4b04-ac75-a508de10f48b)
   )
   (junction (at 86.36 44.704) (diameter 0) (color 0 0 0 0)
     (uuid 3e0f9312-21b5-4008-9a19-e54bd5818e04)
@@ -995,17 +1059,8 @@
   (junction (at 123.19 89.154) (diameter 0) (color 0 0 0 0)
     (uuid 4191f542-fac2-468e-b615-0f2867024102)
   )
-  (junction (at 133.35 131.064) (diameter 0) (color 0 0 0 0)
-    (uuid 4a8af712-c8f3-4d31-9b59-9d8236ab3947)
-  )
-  (junction (at 148.59 131.064) (diameter 0) (color 0 0 0 0)
-    (uuid 4fdcc8bb-003d-4679-a81a-edf638c6ca63)
-  )
   (junction (at 67.31 65.024) (diameter 0) (color 0 0 0 0)
     (uuid 5f160d7d-7dd8-41a2-bf6d-6b54a3c25f8c)
-  )
-  (junction (at 128.27 99.06) (diameter 0) (color 0 0 0 0)
-    (uuid 64b63113-d3d1-47d5-b747-d0b99486ab15)
   )
   (junction (at 85.09 59.944) (diameter 0) (color 0 0 0 0)
     (uuid 691a332d-2b46-4a04-b231-3e3e0b2c6d9c)
@@ -1043,11 +1098,14 @@
   (junction (at 85.09 84.074) (diameter 0) (color 0 0 0 0)
     (uuid a3e7c85b-15b3-4b8d-9bcb-ae2022116068)
   )
-  (junction (at 120.65 99.06) (diameter 0) (color 0 0 0 0)
-    (uuid aa7ea7b9-8c25-4b5d-a506-768c28d4023f)
+  (junction (at 129.032 122.174) (diameter 0) (color 0 0 0 0)
+    (uuid a8ce0cdf-4d34-4a22-bbfc-604b6cce59c2)
   )
   (junction (at 148.844 184.658) (diameter 0) (color 0 0 0 0)
     (uuid aab7a638-cd6b-4443-880b-b4dd7245b4e1)
+  )
+  (junction (at 137.668 89.154) (diameter 0) (color 0 0 0 0)
+    (uuid ab8afe77-8b9f-42e7-a8d1-a6a08498f5e0)
   )
   (junction (at 40.64 173.99) (diameter 0) (color 0 0 0 0)
     (uuid af832551-7804-4646-8126-7e20da464c44)
@@ -1061,11 +1119,11 @@
   (junction (at 123.19 42.164) (diameter 0) (color 0 0 0 0)
     (uuid d295b5e5-a02d-46ea-9c9f-d1b8b6d16c5f)
   )
-  (junction (at 148.59 136.144) (diameter 0) (color 0 0 0 0)
-    (uuid d41ce55a-1900-4e09-94fa-58402d0b6d40)
-  )
   (junction (at 87.63 130.81) (diameter 0) (color 0 0 0 0)
     (uuid e5e27c53-00f2-4a3a-b8fe-194c8081293f)
+  )
+  (junction (at 144.018 127.254) (diameter 0) (color 0 0 0 0)
+    (uuid f97895e7-6486-4f89-970c-f043bf719567)
   )
   (junction (at 69.85 65.024) (diameter 0) (color 0 0 0 0)
     (uuid ff537de3-5bf8-40d2-bc6d-60eda5137115)
@@ -1089,9 +1147,9 @@
     (stroke (width 0) (type default))
     (uuid 01f2ec8b-47b9-42c3-8bfe-9f6d9a89abd5)
   )
-  (wire (pts (xy 148.59 136.144) (xy 151.13 136.144))
+  (wire (pts (xy 122.174 122.174) (xy 129.032 122.174))
     (stroke (width 0) (type default))
-    (uuid 08326001-b119-4b45-a304-2fe1663f0804)
+    (uuid 020b376b-55d9-4590-ac11-1edf40e6fd80)
   )
   (wire (pts (xy 69.85 65.024) (xy 71.12 65.024))
     (stroke (width 0) (type default))
@@ -1101,10 +1159,6 @@
     (stroke (width 0) (type default))
     (uuid 0995e217-d627-4ff6-9198-0641c1939bc9)
   )
-  (wire (pts (xy 115.57 139.7) (xy 133.35 139.7))
-    (stroke (width 0) (type default))
-    (uuid 0c217e9f-4d6e-492a-ab65-7472959b2ee1)
-  )
   (wire (pts (xy 146.304 187.96) (xy 146.304 192.278))
     (stroke (width 0) (type default))
     (uuid 0c8e9156-7b97-4ef9-b8d7-bdc9497b57ac)
@@ -1112,10 +1166,6 @@
   (wire (pts (xy 38.354 184.15) (xy 40.64 184.15))
     (stroke (width 0) (type default))
     (uuid 0d374746-0ea3-49e9-8add-c7141fd61fed)
-  )
-  (wire (pts (xy 128.27 99.06) (xy 139.7 99.06))
-    (stroke (width 0) (type default))
-    (uuid 10a3aae5-83d3-4eb2-add4-a16ff69cc51f)
   )
   (wire (pts (xy 67.31 89.154) (xy 68.58 89.154))
     (stroke (width 0) (type default))
@@ -1128,6 +1178,10 @@
   (wire (pts (xy 69.85 116.84) (xy 72.39 116.84))
     (stroke (width 0) (type default))
     (uuid 14ebac6d-be4e-4e12-8bc4-a034034bdc9c)
+  )
+  (wire (pts (xy 144.018 127.254) (xy 144.018 131.953))
+    (stroke (width 0) (type default))
+    (uuid 15818d22-8625-40bd-b727-6b4c9e91df78)
   )
   (wire (pts (xy 87.63 127) (xy 80.01 127))
     (stroke (width 0) (type default))
@@ -1181,13 +1235,9 @@
     (stroke (width 0) (type default))
     (uuid 265e2c82-70c8-4251-a4e7-64db0771d751)
   )
-  (wire (pts (xy 133.35 131.064) (xy 133.35 134.62))
+  (wire (pts (xy 142.748 127.254) (xy 142.748 122.174))
     (stroke (width 0) (type default))
-    (uuid 266555f3-ee15-4829-ba60-a95441a81e4b)
-  )
-  (wire (pts (xy 133.35 136.144) (xy 133.35 139.7))
-    (stroke (width 0) (type default))
-    (uuid 26808555-b73e-450f-a6eb-3d3d3dfff32c)
+    (uuid 269b1ff6-9d8b-4605-8ab7-42e3a2dc7460)
   )
   (wire (pts (xy 93.98 166.37) (xy 93.98 165.608))
     (stroke (width 0) (type default))
@@ -1221,17 +1271,9 @@
     (stroke (width 0) (type default))
     (uuid 30be44b1-9943-4a4c-afb3-895b4f754b4f)
   )
-  (wire (pts (xy 148.59 129.54) (xy 148.59 131.064))
-    (stroke (width 0) (type default))
-    (uuid 34160ab7-4cd7-4135-8866-37f076bdcbaa)
-  )
   (wire (pts (xy 67.31 65.024) (xy 67.31 89.154))
     (stroke (width 0) (type default))
     (uuid 347d1d86-b9bc-44e8-a3b0-0839f1ae3cab)
-  )
-  (wire (pts (xy 123.19 136.144) (xy 125.73 136.144))
-    (stroke (width 0) (type default))
-    (uuid 381d4dc0-ce6a-4dfe-b7a4-d40a4e8ca4d9)
   )
   (wire (pts (xy 116.84 165.608) (xy 116.84 166.37))
     (stroke (width 0) (type default))
@@ -1244,6 +1286,10 @@
   (wire (pts (xy 138.43 166.37) (xy 138.43 165.608))
     (stroke (width 0) (type default))
     (uuid 40984dbf-42e8-40b9-a2a1-1062735b1bfc)
+  )
+  (wire (pts (xy 132.334 89.154) (xy 137.668 89.154))
+    (stroke (width 0) (type default))
+    (uuid 47196015-dd7f-472c-b8c7-66ef7130a872)
   )
   (wire (pts (xy 146.304 192.278) (xy 148.844 192.278))
     (stroke (width 0) (type default))
@@ -1260,10 +1306,6 @@
   (wire (pts (xy 67.31 96.52) (xy 67.31 111.76))
     (stroke (width 0) (type default))
     (uuid 50a64a99-3f30-4be6-a0bd-de5948546b65)
-  )
-  (wire (pts (xy 128.27 129.54) (xy 148.59 129.54))
-    (stroke (width 0) (type default))
-    (uuid 547eb1ba-0068-42bb-83cf-ff8a94fafc51)
   )
   (wire (pts (xy 123.444 184.15) (xy 123.444 184.658))
     (stroke (width 0) (type default))
@@ -1317,17 +1359,25 @@
     (stroke (width 0) (type default))
     (uuid 6aff3c00-da85-49af-a6a3-69b57fd707e8)
   )
+  (wire (pts (xy 156.21 127.254) (xy 151.638 127.254))
+    (stroke (width 0) (type default))
+    (uuid 6ecb728c-e3af-4650-8ac2-3e233c862e1c)
+  )
   (wire (pts (xy 123.444 184.658) (xy 123.444 185.928))
     (stroke (width 0) (type default))
     (uuid 6f28f9cd-0c79-46a4-a924-a4546ded53a4)
   )
-  (wire (pts (xy 115.316 99.06) (xy 120.65 99.06))
+  (wire (pts (xy 132.08 88.9) (xy 132.334 88.9))
     (stroke (width 0) (type default))
-    (uuid 70e49b70-7c4c-4c59-9042-5402d89046c0)
+    (uuid 72b17fe9-0871-43b4-8833-b01abb43950a)
   )
   (wire (pts (xy 69.85 130.81) (xy 87.63 130.81))
     (stroke (width 0) (type default))
     (uuid 7475c48f-8bc4-48ce-b2bd-c3a3537e4d9e)
+  )
+  (wire (pts (xy 132.334 88.9) (xy 132.334 89.154))
+    (stroke (width 0) (type default))
+    (uuid 75d05e13-3b2c-4721-b342-6441654069d8)
   )
   (wire (pts (xy 104.14 187.198) (xy 103.124 187.198))
     (stroke (width 0) (type default))
@@ -1340,6 +1390,10 @@
   (wire (pts (xy 52.07 59.69) (xy 52.07 59.944))
     (stroke (width 0) (type default))
     (uuid 795f7d2f-8944-45d5-b2c1-3abe86f81eec)
+  )
+  (wire (pts (xy 140.208 135.509) (xy 140.208 141.732))
+    (stroke (width 0) (type default))
+    (uuid 7a700fea-f574-4d1d-b04c-5c6e4ba713f3)
   )
   (wire (pts (xy 108.204 192.278) (xy 105.41 192.278))
     (stroke (width 0) (type default))
@@ -1365,17 +1419,17 @@
     (stroke (width 0) (type default))
     (uuid 88cabfc2-4803-4a70-bbc1-96a43f79037b)
   )
+  (wire (pts (xy 144.018 127.254) (xy 142.748 127.254))
+    (stroke (width 0) (type default))
+    (uuid 8f142b8a-8ab4-4182-a29c-59f63f895f84)
+  )
   (wire (pts (xy 40.64 189.23) (xy 40.64 190.5))
     (stroke (width 0) (type default))
     (uuid 8f5f2e93-f62e-4270-a1cb-ec60c61b8814)
   )
-  (wire (pts (xy 148.59 131.064) (xy 148.59 136.144))
+  (wire (pts (xy 142.748 89.154) (xy 145.288 89.154))
     (stroke (width 0) (type default))
-    (uuid 90cda71b-069c-46b6-b0d8-f2eecd8279a4)
-  )
-  (wire (pts (xy 128.27 99.06) (xy 125.73 99.06))
-    (stroke (width 0) (type default))
-    (uuid 95211b8b-dbfc-4506-8b63-3d3986f4ecf4)
+    (uuid 90c0e2b9-38d0-49ae-8e65-1fa4458e90aa)
   )
   (wire (pts (xy 85.09 81.534) (xy 85.09 84.074))
     (stroke (width 0) (type default))
@@ -1388,6 +1442,10 @@
   (wire (pts (xy 100.584 99.06) (xy 105.156 99.06))
     (stroke (width 0) (type default))
     (uuid 9a9728e5-7a2a-430d-bf17-7e82bab47059)
+  )
+  (wire (pts (xy 140.208 122.174) (xy 140.208 127.889))
+    (stroke (width 0) (type default))
+    (uuid 9b6a3bfa-b9bc-44f3-908d-667bb3ac6bf1)
   )
   (wire (pts (xy 85.09 81.534) (xy 82.55 81.534))
     (stroke (width 0) (type default))
@@ -1437,10 +1495,6 @@
     (stroke (width 0) (type default))
     (uuid a99986bb-0e9c-4d9b-a88f-d4f4345345bd)
   )
-  (wire (pts (xy 123.19 129.54) (xy 123.19 136.144))
-    (stroke (width 0) (type default))
-    (uuid ab94d08e-5dd5-4fbd-b0b6-3e823cab4f2f)
-  )
   (wire (pts (xy 100.076 98.806) (xy 100.076 99.06))
     (stroke (width 0) (type default))
     (uuid ac02f7e9-506f-4dcb-9d84-a567ca37182d)
@@ -1452,6 +1506,14 @@
   (wire (pts (xy 123.19 71.374) (xy 123.19 81.534))
     (stroke (width 0) (type default))
     (uuid b2e24161-3ec5-4012-bd11-df80423acbf6)
+  )
+  (wire (pts (xy 129.032 122.174) (xy 137.668 122.174))
+    (stroke (width 0) (type default))
+    (uuid b7aa1689-e5ca-4f33-82a8-d2de4a8ab2fa)
+  )
+  (wire (pts (xy 154.94 89.154) (xy 145.288 89.154))
+    (stroke (width 0) (type default))
+    (uuid b823ead8-741e-4b75-b145-3ccdd2c262a5)
   )
   (wire (pts (xy 39.37 24.384) (xy 39.37 26.924))
     (stroke (width 0) (type default))
@@ -1484,6 +1546,10 @@
   (wire (pts (xy 68.58 94.234) (xy 71.12 94.234))
     (stroke (width 0) (type default))
     (uuid c50e5289-007c-4b07-a620-2a080be5a57d)
+  )
+  (wire (pts (xy 137.668 89.154) (xy 140.208 89.154))
+    (stroke (width 0) (type default))
+    (uuid c58824b7-9c42-4ef8-8101-ff5d74348615)
   )
   (wire (pts (xy 82.55 81.534) (xy 82.55 62.484))
     (stroke (width 0) (type default))
@@ -1557,33 +1623,17 @@
     (stroke (width 0) (type default))
     (uuid f6a76804-4a6a-46b3-af1c-502b16baa1d3)
   )
-  (wire (pts (xy 115.57 134.62) (xy 133.35 134.62))
-    (stroke (width 0) (type default))
-    (uuid f7c86bf0-4d66-4a41-a91f-99642bea1442)
-  )
   (wire (pts (xy 69.85 57.404) (xy 85.09 57.404))
     (stroke (width 0) (type default))
     (uuid f7fcec22-5c55-44e5-b01f-9561cba8e147)
-  )
-  (wire (pts (xy 120.65 129.54) (xy 120.65 128.524))
-    (stroke (width 0) (type default))
-    (uuid f8115f8f-adfb-4de0-81d2-1f3b47cb5006)
   )
   (wire (pts (xy 85.09 67.564) (xy 85.09 71.374))
     (stroke (width 0) (type default))
     (uuid fa0b8c18-87b6-4dcb-b37e-6de760b410a0)
   )
-  (wire (pts (xy 125.73 129.54) (xy 125.73 131.064))
-    (stroke (width 0) (type default))
-    (uuid fa0f3599-3ac2-4d3c-b76a-41ba35cb1a1e)
-  )
   (wire (pts (xy 67.31 42.164) (xy 71.12 42.164))
     (stroke (width 0) (type default))
     (uuid faa2bd93-c1cd-4693-b520-600255dffc75)
-  )
-  (wire (pts (xy 120.65 99.06) (xy 123.19 99.06))
-    (stroke (width 0) (type default))
-    (uuid fd052af1-b951-4e88-a244-3a70cd427932)
   )
 
   (rectangle (start 20.574 154.178) (end 156.464 194.818)
@@ -1600,6 +1650,11 @@
   (text "デットタイム生成＋非常停止対応ロジック" (at 47.244 161.798 0)
     (effects (font (face "BIZ UDゴシック") (size 3.5 3.5) (thickness 0.6) bold) (justify left bottom))
     (uuid 8a3c997d-262c-4af8-81a6-f6110e5095a4)
+  )
+
+  (label "FAULT" (at 144.018 131.953 270) (fields_autoplaced)
+    (effects (font (size 1.27 1.27)) (justify right bottom))
+    (uuid d9f29eee-1332-42a1-9c70-56ba08a5fe1f)
   )
 
   (global_label "LO" (shape output) (at 66.04 181.61 0) (fields_autoplaced)
@@ -1733,17 +1788,9 @@
     (effects (font (size 1.27 1.27)) (justify left))
     (uuid 048c33fd-cf03-4e6f-a028-5ea0dfde6556)
   )
-  (hierarchical_label "VREF" (shape input) (at 115.57 134.62 180) (fields_autoplaced)
-    (effects (font (size 1.27 1.27)) (justify right))
-    (uuid 0967c2ad-89c2-422c-a87c-4e8cf3ee3802)
-  )
   (hierarchical_label "PWM_B" (shape input) (at 35.56 181.61 180) (fields_autoplaced)
     (effects (font (size 1.27 1.27)) (justify right))
     (uuid 1070ae5e-4df5-46b5-9d1f-2fec72248e40)
-  )
-  (hierarchical_label "Iout" (shape input) (at 115.57 139.7 180) (fields_autoplaced)
-    (effects (font (size 1.27 1.27)) (justify right))
-    (uuid 22d85cce-abe8-40a3-8640-da85e74f709e)
   )
   (hierarchical_label "VOUT" (shape input) (at 105.156 99.06 0) (fields_autoplaced)
     (effects (font (size 1.27 1.27)) (justify left))
@@ -1761,50 +1808,15 @@
     (effects (font (size 1.27 1.27)) (justify right))
     (uuid a3e5eef2-3440-4b8f-b2cb-2cc74d193a50)
   )
-
-  (symbol (lib_id "Device:R") (at 129.54 131.064 270) (unit 1)
-    (in_bom yes) (on_board yes) (dnp no)
-    (uuid 0491581a-ef54-4688-bdd8-0d76b8c6c863)
-    (property "Reference" "R12" (at 129.54 133.604 90)
-      (effects (font (size 1.27 1.27)))
-    )
-    (property "Value" "10kΩ" (at 129.54 131.064 90)
-      (effects (font (size 1.27 1.27)))
-    )
-    (property "Footprint" "Resistor_SMD:R_0603_1608Metric" (at 129.54 129.286 90)
-      (effects (font (size 1.27 1.27)) hide)
-    )
-    (property "Datasheet" "~" (at 129.54 131.064 0)
-      (effects (font (size 1.27 1.27)) hide)
-    )
-    (pin "1" (uuid 0b89b9ef-e230-4ebd-97bc-2a09cd547977))
-    (pin "2" (uuid 0373041f-4207-4225-8192-1f3d33dc9688))
-    (instances
-      (project "mainboard2"
-        (path "/106e5476-7cb9-4c2e-b827-12558fe0d8df"
-          (reference "R12") (unit 1)
-        )
-        (path "/106e5476-7cb9-4c2e-b827-12558fe0d8df/3dd73459-ae44-4df8-ae56-545e20d02353"
-          (reference "R27") (unit 1)
-        )
-      )
-      (project "MOSFET版電源管理基板"
-        (path "/608995ae-e0cf-4f60-8ee6-f47672990c68"
-          (reference "R8") (unit 1)
-        )
-      )
-      (project "30A_MD2改4"
-        (path "/6e2a22aa-b8d0-47b5-aa74-4e02070980c5"
-          (reference "R15") (unit 1)
-        )
-      )
-    )
+  (hierarchical_label "Iout" (shape input) (at 140.208 125.73 180) (fields_autoplaced)
+    (effects (font (size 1.27 1.27)) (justify right))
+    (uuid a76b67bd-50f9-4ea6-a62e-7ec5fe2d0692)
   )
 
   (symbol (lib_id "Device:R") (at 87.884 165.608 90) (mirror x) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid 070f748c-1c56-466f-8757-3acc459549b7)
-    (property "Reference" "R49" (at 87.884 163.068 90)
+    (property "Reference" "R52" (at 87.884 163.068 90)
       (effects (font (size 1.27 1.27)))
     )
     (property "Value" "10kΩ" (at 87.884 161.798 90)
@@ -1821,7 +1833,7 @@
     (instances
       (project "mainboard2"
         (path "/106e5476-7cb9-4c2e-b827-12558fe0d8df/3dd73459-ae44-4df8-ae56-545e20d02353"
-          (reference "R49") (unit 1)
+          (reference "R52") (unit 1)
         )
       )
       (project "MOSFET版電源管理基板"
@@ -1862,7 +1874,7 @@
           (reference "#PWR024") (unit 1)
         )
         (path "/106e5476-7cb9-4c2e-b827-12558fe0d8df/3dd73459-ae44-4df8-ae56-545e20d02353"
-          (reference "#PWR058") (unit 1)
+          (reference "#PWR060") (unit 1)
         )
       )
       (project "MOSFET版電源管理基板"
@@ -1895,7 +1907,7 @@
           (reference "#PWR024") (unit 1)
         )
         (path "/106e5476-7cb9-4c2e-b827-12558fe0d8df/3dd73459-ae44-4df8-ae56-545e20d02353"
-          (reference "#PWR074") (unit 1)
+          (reference "#PWR077") (unit 1)
         )
       )
       (project "MOSFET版電源管理基板"
@@ -1928,7 +1940,40 @@
           (reference "#PWR024") (unit 1)
         )
         (path "/106e5476-7cb9-4c2e-b827-12558fe0d8df/3dd73459-ae44-4df8-ae56-545e20d02353"
-          (reference "#PWR072") (unit 1)
+          (reference "#PWR075") (unit 1)
+        )
+      )
+      (project "MOSFET版電源管理基板"
+        (path "/608995ae-e0cf-4f60-8ee6-f47672990c68"
+          (reference "#PWR018") (unit 1)
+        )
+      )
+    )
+  )
+
+  (symbol (lib_id "power:GND") (at 129.032 129.794 0) (unit 1)
+    (in_bom yes) (on_board yes) (dnp no)
+    (uuid 12888cfa-c677-43fd-a775-dae2df461c2a)
+    (property "Reference" "#PWR024" (at 129.032 136.144 0)
+      (effects (font (size 1.27 1.27)) hide)
+    )
+    (property "Value" "GND" (at 129.032 134.874 0)
+      (effects (font (size 1.27 1.27)))
+    )
+    (property "Footprint" "" (at 129.032 129.794 0)
+      (effects (font (size 1.27 1.27)) hide)
+    )
+    (property "Datasheet" "" (at 129.032 129.794 0)
+      (effects (font (size 1.27 1.27)) hide)
+    )
+    (pin "1" (uuid 339152c2-e5ed-4092-9015-42aa569df562))
+    (instances
+      (project "mainboard2"
+        (path "/106e5476-7cb9-4c2e-b827-12558fe0d8df"
+          (reference "#PWR024") (unit 1)
+        )
+        (path "/106e5476-7cb9-4c2e-b827-12558fe0d8df/3dd73459-ae44-4df8-ae56-545e20d02353"
+          (reference "#PWR071") (unit 1)
         )
       )
       (project "MOSFET版電源管理基板"
@@ -1942,7 +1987,7 @@
   (symbol (lib_id "power:+5V") (at 123.444 177.038 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
     (uuid 13cf4376-b0b9-4305-a2c7-d309a802d303)
-    (property "Reference" "#PWR071" (at 123.444 180.848 0)
+    (property "Reference" "#PWR074" (at 123.444 180.848 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Value" "+5V" (at 123.444 171.958 0)
@@ -1958,7 +2003,7 @@
     (instances
       (project "mainboard2"
         (path "/106e5476-7cb9-4c2e-b827-12558fe0d8df/3dd73459-ae44-4df8-ae56-545e20d02353"
-          (reference "#PWR071") (unit 1)
+          (reference "#PWR074") (unit 1)
         )
       )
       (project "MOSFET版電源管理基板"
@@ -2019,7 +2064,7 @@
   (symbol (lib_id "Device:R") (at 108.204 179.578 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid 1b63e00a-59ef-44c1-a7c6-8fc86a21ced3)
-    (property "Reference" "R45" (at 105.664 179.578 90)
+    (property "Reference" "R48" (at 105.664 179.578 90)
       (effects (font (size 1.27 1.27)))
     )
     (property "Value" "10Ω" (at 104.394 179.578 90)
@@ -2036,7 +2081,7 @@
     (instances
       (project "mainboard2"
         (path "/106e5476-7cb9-4c2e-b827-12558fe0d8df/3dd73459-ae44-4df8-ae56-545e20d02353"
-          (reference "R45") (unit 1)
+          (reference "R48") (unit 1)
         )
       )
       (project "MOSFET版電源管理基板"
@@ -2050,6 +2095,31 @@
       (project "30A_MD2改4"
         (path "/6e2a22aa-b8d0-47b5-aa74-4e02070980c5"
           (reference "R15") (unit 1)
+        )
+      )
+    )
+  )
+
+  (symbol (lib_name "+3.3V_1") (lib_id "power:+3.3V") (at 156.21 127.254 0) (unit 1)
+    (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
+    (uuid 1e4c52df-130c-45d6-8c50-3a8dab13f5b1)
+    (property "Reference" "#PWR076" (at 156.21 131.064 0)
+      (effects (font (size 1.27 1.27)) hide)
+    )
+    (property "Value" "+3.3V" (at 156.21 121.92 0)
+      (effects (font (size 1.27 1.27)))
+    )
+    (property "Footprint" "" (at 156.21 127.254 0)
+      (effects (font (size 1.27 1.27)) hide)
+    )
+    (property "Datasheet" "" (at 156.21 127.254 0)
+      (effects (font (size 1.27 1.27)) hide)
+    )
+    (pin "1" (uuid 359636c5-cacc-4ea0-9098-59da8868ba74))
+    (instances
+      (project "mainboard2"
+        (path "/106e5476-7cb9-4c2e-b827-12558fe0d8df/3dd73459-ae44-4df8-ae56-545e20d02353"
+          (reference "#PWR076") (unit 1)
         )
       )
     )
@@ -2077,7 +2147,7 @@
           (reference "#PWR020") (unit 1)
         )
         (path "/106e5476-7cb9-4c2e-b827-12558fe0d8df/3dd73459-ae44-4df8-ae56-545e20d02353"
-          (reference "#PWR063") (unit 1)
+          (reference "#PWR065") (unit 1)
         )
       )
       (project "MOSFET版電源管理基板"
@@ -2088,10 +2158,41 @@
     )
   )
 
+  (symbol (lib_id "Device:R") (at 140.208 131.699 0) (mirror y) (unit 1)
+    (in_bom yes) (on_board yes) (dnp no)
+    (uuid 228452ca-b6ef-4413-a8b0-b0889999fc0f)
+    (property "Reference" "R6" (at 135.763 131.699 90)
+      (effects (font (size 1.27 1.27)))
+    )
+    (property "Value" "20kΩ" (at 137.668 131.699 90)
+      (effects (font (size 1.27 1.27)))
+    )
+    (property "Footprint" "Resistor_SMD:R_0805_2012Metric" (at 141.986 131.699 90)
+      (effects (font (size 1.27 1.27)) hide)
+    )
+    (property "Datasheet" "~" (at 140.208 131.699 0)
+      (effects (font (size 1.27 1.27)) hide)
+    )
+    (pin "1" (uuid 1e0105d9-3a7b-4e82-8b5b-4bb8e1bf92b1))
+    (pin "2" (uuid f43a4fcc-ce72-4de6-832e-8c7f83cf6cbc))
+    (instances
+      (project "mainboard2"
+        (path "/106e5476-7cb9-4c2e-b827-12558fe0d8df/3dd73459-ae44-4df8-ae56-545e20d02353"
+          (reference "R6") (unit 1)
+        )
+      )
+      (project "30A_MD2改5"
+        (path "/6e2a22aa-b8d0-47b5-aa74-4e02070980c5"
+          (reference "R20") (unit 1)
+        )
+      )
+    )
+  )
+
   (symbol (lib_id "Device:R") (at 108.204 188.468 180) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid 242a9412-ccce-43b7-bbeb-c936ab5d4d88)
-    (property "Reference" "R44" (at 110.744 188.468 90)
+    (property "Reference" "R47" (at 110.744 188.468 90)
       (effects (font (size 1.27 1.27)))
     )
     (property "Value" "10kΩ" (at 112.014 188.468 90)
@@ -2108,7 +2209,7 @@
     (instances
       (project "mainboard2"
         (path "/106e5476-7cb9-4c2e-b827-12558fe0d8df/3dd73459-ae44-4df8-ae56-545e20d02353"
-          (reference "R44") (unit 1)
+          (reference "R47") (unit 1)
         )
       )
       (project "MOSFET版電源管理基板"
@@ -2183,78 +2284,6 @@
     )
   )
 
-  (symbol (lib_id "Device:R") (at 144.78 131.064 270) (unit 1)
-    (in_bom yes) (on_board yes) (dnp no)
-    (uuid 2771c97c-9b9d-428e-a607-0a1c06c4b2f2)
-    (property "Reference" "R16" (at 144.78 133.604 90)
-      (effects (font (size 1.27 1.27)))
-    )
-    (property "Value" "10kΩ" (at 144.78 131.064 90)
-      (effects (font (size 1.27 1.27)))
-    )
-    (property "Footprint" "Resistor_SMD:R_0603_1608Metric" (at 144.78 129.286 90)
-      (effects (font (size 1.27 1.27)) hide)
-    )
-    (property "Datasheet" "~" (at 144.78 131.064 0)
-      (effects (font (size 1.27 1.27)) hide)
-    )
-    (pin "1" (uuid 9c4d9a08-2521-4bd3-acae-d0fdb8142c79))
-    (pin "2" (uuid d0081952-5dba-4ea4-bd68-091c76ffbf31))
-    (instances
-      (project "mainboard2"
-        (path "/106e5476-7cb9-4c2e-b827-12558fe0d8df"
-          (reference "R16") (unit 1)
-        )
-        (path "/106e5476-7cb9-4c2e-b827-12558fe0d8df/3dd73459-ae44-4df8-ae56-545e20d02353"
-          (reference "R29") (unit 1)
-        )
-      )
-      (project "MOSFET版電源管理基板"
-        (path "/608995ae-e0cf-4f60-8ee6-f47672990c68"
-          (reference "R13") (unit 1)
-        )
-      )
-      (project "30A_MD2改4"
-        (path "/6e2a22aa-b8d0-47b5-aa74-4e02070980c5"
-          (reference "R15") (unit 1)
-        )
-      )
-    )
-  )
-
-  (symbol (lib_id "power:GND") (at 151.13 136.144 0) (unit 1)
-    (in_bom yes) (on_board yes) (dnp no)
-    (uuid 29ba410c-9519-47e8-9333-e10285151c52)
-    (property "Reference" "#PWR024" (at 151.13 142.494 0)
-      (effects (font (size 1.27 1.27)) hide)
-    )
-    (property "Value" "GND" (at 151.13 141.224 0)
-      (effects (font (size 1.27 1.27)))
-    )
-    (property "Footprint" "" (at 151.13 136.144 0)
-      (effects (font (size 1.27 1.27)) hide)
-    )
-    (property "Datasheet" "" (at 151.13 136.144 0)
-      (effects (font (size 1.27 1.27)) hide)
-    )
-    (pin "1" (uuid a4a3f7b3-5954-4138-a21d-300b4d3abbbb))
-    (instances
-      (project "mainboard2"
-        (path "/106e5476-7cb9-4c2e-b827-12558fe0d8df"
-          (reference "#PWR024") (unit 1)
-        )
-        (path "/106e5476-7cb9-4c2e-b827-12558fe0d8df/3dd73459-ae44-4df8-ae56-545e20d02353"
-          (reference "#PWR075") (unit 1)
-        )
-      )
-      (project "MOSFET版電源管理基板"
-        (path "/608995ae-e0cf-4f60-8ee6-f47672990c68"
-          (reference "#PWR018") (unit 1)
-        )
-      )
-    )
-  )
-
   (symbol (lib_id "power:GND") (at 52.07 116.84 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
     (uuid 303bfe83-a4b6-4813-b9af-21f947b54ab6)
@@ -2277,7 +2306,7 @@
           (reference "#PWR020") (unit 1)
         )
         (path "/106e5476-7cb9-4c2e-b827-12558fe0d8df/3dd73459-ae44-4df8-ae56-545e20d02353"
-          (reference "#PWR060") (unit 1)
+          (reference "#PWR062") (unit 1)
         )
       )
       (project "MOSFET版電源管理基板"
@@ -2327,7 +2356,7 @@
   (symbol (lib_id "Device:R") (at 123.444 180.848 0) (mirror x) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid 352005d0-adca-4193-bb5e-2d6bd02eaf5d)
-    (property "Reference" "R59" (at 120.904 180.848 90)
+    (property "Reference" "R62" (at 120.904 180.848 90)
       (effects (font (size 1.27 1.27)))
     )
     (property "Value" "10kΩ" (at 119.634 180.848 90)
@@ -2344,7 +2373,7 @@
     (instances
       (project "mainboard2"
         (path "/106e5476-7cb9-4c2e-b827-12558fe0d8df/3dd73459-ae44-4df8-ae56-545e20d02353"
-          (reference "R59") (unit 1)
+          (reference "R62") (unit 1)
         )
       )
       (project "MOSFET版電源管理基板"
@@ -2450,7 +2479,7 @@
           (reference "#PWR022") (unit 1)
         )
         (path "/106e5476-7cb9-4c2e-b827-12558fe0d8df/3dd73459-ae44-4df8-ae56-545e20d02353"
-          (reference "#PWR065") (unit 1)
+          (reference "#PWR067") (unit 1)
         )
       )
       (project "MOSFET版電源管理基板"
@@ -2464,7 +2493,7 @@
   (symbol (lib_id "power:+5V") (at 82.804 177.038 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
     (uuid 4938d738-8162-4636-9b77-f57b53216608)
-    (property "Reference" "#PWR064" (at 82.804 180.848 0)
+    (property "Reference" "#PWR066" (at 82.804 180.848 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Value" "+5V" (at 82.804 171.958 0)
@@ -2480,7 +2509,7 @@
     (instances
       (project "mainboard2"
         (path "/106e5476-7cb9-4c2e-b827-12558fe0d8df/3dd73459-ae44-4df8-ae56-545e20d02353"
-          (reference "#PWR064") (unit 1)
+          (reference "#PWR066") (unit 1)
         )
       )
       (project "MOSFET版電源管理基板"
@@ -2494,7 +2523,7 @@
   (symbol (lib_id "power:GND1") (at 100.584 106.68 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
     (uuid 49479575-22a8-4662-92b5-529bee576841)
-    (property "Reference" "#PWR043" (at 100.584 113.03 0)
+    (property "Reference" "#PWR069" (at 100.584 113.03 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Value" "GND1" (at 100.584 111.76 0)
@@ -2510,7 +2539,7 @@
     (instances
       (project "mainboard2"
         (path "/106e5476-7cb9-4c2e-b827-12558fe0d8df/3dd73459-ae44-4df8-ae56-545e20d02353"
-          (reference "#PWR043") (unit 1)
+          (reference "#PWR069") (unit 1)
         )
       )
     )
@@ -2519,7 +2548,7 @@
   (symbol (lib_id "Device:R") (at 31.75 184.15 90) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid 500fe1ee-2941-4979-9032-267079c33992)
-    (property "Reference" "R56" (at 31.75 184.15 90)
+    (property "Reference" "R59" (at 31.75 184.15 90)
       (effects (font (size 1.27 1.27)))
     )
     (property "Value" "10kΩ" (at 31.75 186.69 90)
@@ -2536,7 +2565,7 @@
     (instances
       (project "mainboard2"
         (path "/106e5476-7cb9-4c2e-b827-12558fe0d8df/3dd73459-ae44-4df8-ae56-545e20d02353"
-          (reference "R56") (unit 1)
+          (reference "R59") (unit 1)
         )
       )
       (project "MOSFET版電源管理基板"
@@ -2558,7 +2587,7 @@
   (symbol (lib_id "SamacSys_Parts:IRFML8244TRPBF") (at 103.124 184.658 0) (mirror y) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid 5398f7f8-ccb4-4f0a-9bed-22cfb18f6f4a)
-    (property "Reference" "Q6" (at 92.964 177.038 0)
+    (property "Reference" "Q9" (at 92.964 177.038 0)
       (effects (font (size 1.27 1.27)))
     )
     (property "Value" "IRFML8244TRPBF" (at 92.964 179.578 0)
@@ -2594,7 +2623,7 @@
     (instances
       (project "mainboard2"
         (path "/106e5476-7cb9-4c2e-b827-12558fe0d8df/3dd73459-ae44-4df8-ae56-545e20d02353"
-          (reference "Q6") (unit 1)
+          (reference "Q9") (unit 1)
         )
       )
       (project "MOSFET版電源管理基板"
@@ -2610,34 +2639,26 @@
     )
   )
 
-  (symbol (lib_id "power:GND") (at 139.7 99.06 0) (unit 1)
-    (in_bom yes) (on_board yes) (dnp no)
-    (uuid 5b70e3df-5239-4274-9e25-1462336fdd29)
-    (property "Reference" "#PWR024" (at 139.7 105.41 0)
+  (symbol (lib_id "power:GND1") (at 132.08 88.9 0) (unit 1)
+    (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
+    (uuid 579f31ed-8b99-47a8-8f4c-cdd0336b6836)
+    (property "Reference" "#PWR0149" (at 132.08 95.25 0)
       (effects (font (size 1.27 1.27)) hide)
     )
-    (property "Value" "GND" (at 139.7 104.14 0)
+    (property "Value" "GND1" (at 132.08 93.98 0)
       (effects (font (size 1.27 1.27)))
     )
-    (property "Footprint" "" (at 139.7 99.06 0)
+    (property "Footprint" "" (at 132.08 88.9 0)
       (effects (font (size 1.27 1.27)) hide)
     )
-    (property "Datasheet" "" (at 139.7 99.06 0)
+    (property "Datasheet" "" (at 132.08 88.9 0)
       (effects (font (size 1.27 1.27)) hide)
     )
-    (pin "1" (uuid eaba91f8-f39c-45e8-8f99-ffecd3812c67))
+    (pin "1" (uuid 7f11e75d-7c21-424f-ad1f-6b7708ae0bb2))
     (instances
       (project "mainboard2"
-        (path "/106e5476-7cb9-4c2e-b827-12558fe0d8df"
-          (reference "#PWR024") (unit 1)
-        )
         (path "/106e5476-7cb9-4c2e-b827-12558fe0d8df/3dd73459-ae44-4df8-ae56-545e20d02353"
-          (reference "#PWR073") (unit 1)
-        )
-      )
-      (project "MOSFET版電源管理基板"
-        (path "/608995ae-e0cf-4f60-8ee6-f47672990c68"
-          (reference "#PWR018") (unit 1)
+          (reference "#PWR0149") (unit 1)
         )
       )
     )
@@ -2646,7 +2667,7 @@
   (symbol (lib_id "SamacSys_Parts:IRFML8244TRPBF") (at 87.63 127 90) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid 5fa236c8-c6d6-42c4-bb10-b1763f019bc6)
-    (property "Reference" "Q8" (at 93.98 119.38 0)
+    (property "Reference" "Q11" (at 93.98 119.38 0)
       (effects (font (size 1.27 1.27)))
     )
     (property "Value" "IRFML8244TRPBF" (at 96.52 118.11 0)
@@ -2682,7 +2703,7 @@
     (instances
       (project "mainboard2"
         (path "/106e5476-7cb9-4c2e-b827-12558fe0d8df/3dd73459-ae44-4df8-ae56-545e20d02353"
-          (reference "Q8") (unit 1)
+          (reference "Q11") (unit 1)
         )
       )
       (project "MOSFET版電源管理基板"
@@ -2720,7 +2741,7 @@
           (reference "#PWR024") (unit 1)
         )
         (path "/106e5476-7cb9-4c2e-b827-12558fe0d8df/3dd73459-ae44-4df8-ae56-545e20d02353"
-          (reference "#PWR069") (unit 1)
+          (reference "#PWR072") (unit 1)
         )
       )
       (project "MOSFET版電源管理基板"
@@ -2731,10 +2752,36 @@
     )
   )
 
+  (symbol (lib_id "Device:C") (at 129.032 125.984 0) (unit 1)
+    (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
+    (uuid 6aab776f-ccf3-4ba1-9e6e-1d94203ffb36)
+    (property "Reference" "C11" (at 132.08 124.714 0)
+      (effects (font (size 1.27 1.27)) (justify left))
+    )
+    (property "Value" "0.1μF" (at 132.08 127.254 0)
+      (effects (font (size 1.27 1.27)) (justify left))
+    )
+    (property "Footprint" "Capacitor_SMD:C_0603_1608Metric_Pad1.08x0.95mm_HandSolder" (at 129.9972 129.794 0)
+      (effects (font (size 1.27 1.27)) hide)
+    )
+    (property "Datasheet" "~" (at 129.032 125.984 0)
+      (effects (font (size 1.27 1.27)) hide)
+    )
+    (pin "1" (uuid eeff36c6-27f0-4577-833e-68d094ec50c5))
+    (pin "2" (uuid c568ea11-9e5f-4024-a496-8310518ba575))
+    (instances
+      (project "mainboard2"
+        (path "/106e5476-7cb9-4c2e-b827-12558fe0d8df/3dd73459-ae44-4df8-ae56-545e20d02353"
+          (reference "C11") (unit 1)
+        )
+      )
+    )
+  )
+
   (symbol (lib_id "power:+5V") (at 66.04 173.99 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
     (uuid 6d9cdb67-db0d-4c1a-9842-9a2e87c5fd0b)
-    (property "Reference" "#PWR061" (at 66.04 177.8 0)
+    (property "Reference" "#PWR063" (at 66.04 177.8 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Value" "+5V" (at 66.04 168.91 0)
@@ -2750,7 +2797,7 @@
     (instances
       (project "mainboard2"
         (path "/106e5476-7cb9-4c2e-b827-12558fe0d8df/3dd73459-ae44-4df8-ae56-545e20d02353"
-          (reference "#PWR061") (unit 1)
+          (reference "#PWR063") (unit 1)
         )
       )
       (project "MOSFET版電源管理基板"
@@ -2784,37 +2831,12 @@
           (reference "R11") (unit 1)
         )
         (path "/106e5476-7cb9-4c2e-b827-12558fe0d8df/3dd73459-ae44-4df8-ae56-545e20d02353"
-          (reference "R60") (unit 1)
+          (reference "R63") (unit 1)
         )
       )
       (project "MOSFET版電源管理基板"
         (path "/608995ae-e0cf-4f60-8ee6-f47672990c68"
           (reference "R3") (unit 1)
-        )
-      )
-    )
-  )
-
-  (symbol (lib_id "power:GND1") (at 115.316 99.06 0) (unit 1)
-    (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
-    (uuid 7f6d8aa4-09dc-4efa-b3d0-8b4aef6aae7e)
-    (property "Reference" "#PWR068" (at 115.316 105.41 0)
-      (effects (font (size 1.27 1.27)) hide)
-    )
-    (property "Value" "GND1" (at 115.316 104.14 0)
-      (effects (font (size 1.27 1.27)))
-    )
-    (property "Footprint" "" (at 115.316 99.06 0)
-      (effects (font (size 1.27 1.27)) hide)
-    )
-    (property "Datasheet" "" (at 115.316 99.06 0)
-      (effects (font (size 1.27 1.27)) hide)
-    )
-    (pin "1" (uuid 8699cab0-efb8-4023-8a0c-9c023ecd48d2))
-    (instances
-      (project "mainboard2"
-        (path "/106e5476-7cb9-4c2e-b827-12558fe0d8df/3dd73459-ae44-4df8-ae56-545e20d02353"
-          (reference "#PWR068") (unit 1)
         )
       )
     )
@@ -2842,7 +2864,7 @@
           (reference "#PWR020") (unit 1)
         )
         (path "/106e5476-7cb9-4c2e-b827-12558fe0d8df/3dd73459-ae44-4df8-ae56-545e20d02353"
-          (reference "#PWR055") (unit 1)
+          (reference "#PWR057") (unit 1)
         )
       )
       (project "MOSFET版電源管理基板"
@@ -2876,7 +2898,7 @@
           (reference "R9") (unit 1)
         )
         (path "/106e5476-7cb9-4c2e-b827-12558fe0d8df/3dd73459-ae44-4df8-ae56-545e20d02353"
-          (reference "R51") (unit 1)
+          (reference "R54") (unit 1)
         )
       )
       (project "MOSFET版電源管理基板"
@@ -2915,7 +2937,7 @@
           (reference "R7") (unit 1)
         )
         (path "/106e5476-7cb9-4c2e-b827-12558fe0d8df/3dd73459-ae44-4df8-ae56-545e20d02353"
-          (reference "R17") (unit 1)
+          (reference "R57") (unit 1)
         )
       )
       (project "MOSFET版電源管理基板"
@@ -2934,7 +2956,7 @@
   (symbol (lib_id "power:+5V") (at 29.21 158.75 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid 87e41e20-980e-40bf-b763-618d22fd9df0)
-    (property "Reference" "#PWR054" (at 29.21 162.56 0)
+    (property "Reference" "#PWR056" (at 29.21 162.56 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Value" "+5V" (at 31.75 157.48 0)
@@ -2950,7 +2972,7 @@
     (instances
       (project "mainboard2"
         (path "/106e5476-7cb9-4c2e-b827-12558fe0d8df/3dd73459-ae44-4df8-ae56-545e20d02353"
-          (reference "#PWR054") (unit 1)
+          (reference "#PWR056") (unit 1)
         )
       )
       (project "MOSFET版電源管理基板"
@@ -2964,7 +2986,7 @@
   (symbol (lib_id "Device:R") (at 109.474 165.608 90) (mirror x) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid 8b8a3247-e1cb-422d-8aef-54ddd1f07d72)
-    (property "Reference" "R43" (at 109.474 163.068 90)
+    (property "Reference" "R46" (at 109.474 163.068 90)
       (effects (font (size 1.27 1.27)))
     )
     (property "Value" "10kΩ" (at 109.474 161.798 90)
@@ -2981,7 +3003,7 @@
     (instances
       (project "mainboard2"
         (path "/106e5476-7cb9-4c2e-b827-12558fe0d8df/3dd73459-ae44-4df8-ae56-545e20d02353"
-          (reference "R43") (unit 1)
+          (reference "R46") (unit 1)
         )
       )
       (project "MOSFET版電源管理基板"
@@ -3073,7 +3095,7 @@
           (reference "R5") (unit 1)
         )
         (path "/106e5476-7cb9-4c2e-b827-12558fe0d8df/3dd73459-ae44-4df8-ae56-545e20d02353"
-          (reference "R48") (unit 1)
+          (reference "R51") (unit 1)
         )
       )
       (project "MOSFET版電源管理基板"
@@ -3084,6 +3106,31 @@
       (project "30A_MD2改4"
         (path "/6e2a22aa-b8d0-47b5-aa74-4e02070980c5"
           (reference "R15") (unit 1)
+        )
+      )
+    )
+  )
+
+  (symbol (lib_name "+3.3V_1") (lib_id "power:+3.3V") (at 122.174 122.174 0) (unit 1)
+    (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
+    (uuid 9c3bbf9f-fdb9-44f3-bf7a-e229a935aa7f)
+    (property "Reference" "#PWR073" (at 122.174 125.984 0)
+      (effects (font (size 1.27 1.27)) hide)
+    )
+    (property "Value" "+3.3V" (at 122.174 116.84 0)
+      (effects (font (size 1.27 1.27)))
+    )
+    (property "Footprint" "" (at 122.174 122.174 0)
+      (effects (font (size 1.27 1.27)) hide)
+    )
+    (property "Datasheet" "" (at 122.174 122.174 0)
+      (effects (font (size 1.27 1.27)) hide)
+    )
+    (pin "1" (uuid 7806e4f1-c39a-4a2a-a766-37341fbb2e8b))
+    (instances
+      (project "mainboard2"
+        (path "/106e5476-7cb9-4c2e-b827-12558fe0d8df/3dd73459-ae44-4df8-ae56-545e20d02353"
+          (reference "#PWR073") (unit 1)
         )
       )
     )
@@ -3111,7 +3158,7 @@
           (reference "#PWR024") (unit 1)
         )
         (path "/106e5476-7cb9-4c2e-b827-12558fe0d8df/3dd73459-ae44-4df8-ae56-545e20d02353"
-          (reference "#PWR067") (unit 1)
+          (reference "#PWR070") (unit 1)
         )
       )
       (project "MOSFET版電源管理基板"
@@ -3144,67 +3191,12 @@
           (reference "#PWR024") (unit 1)
         )
         (path "/106e5476-7cb9-4c2e-b827-12558fe0d8df/3dd73459-ae44-4df8-ae56-545e20d02353"
-          (reference "#PWR066") (unit 1)
+          (reference "#PWR068") (unit 1)
         )
       )
       (project "MOSFET版電源管理基板"
         (path "/608995ae-e0cf-4f60-8ee6-f47672990c68"
           (reference "#PWR018") (unit 1)
-        )
-      )
-    )
-  )
-
-  (symbol (lib_id "SamacSys_Parts:MLX91220KDC-ABR-050-SP") (at 120.65 99.06 90) (mirror x) (unit 1)
-    (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
-    (uuid ac92bacc-46ad-48d8-acdc-96675f92f3d1)
-    (property "Reference" "IC3" (at 132.08 113.03 90)
-      (effects (font (size 1.27 1.27)) (justify right))
-    )
-    (property "Value" "MLX91220KDC-ABR-050-SP" (at 132.08 115.57 90)
-      (effects (font (size 1.27 1.27)) (justify right))
-    )
-    (property "Footprint" "Package_SO:SOIC-8_3.9x4.9mm_P1.27mm" (at 215.57 125.73 0)
-      (effects (font (size 1.27 1.27)) (justify left top) hide)
-    )
-    (property "Datasheet" "https://media.melexis.com/-/media/files/documents/datasheets/mlx91220-datasheet-melexis.pdf" (at 315.57 125.73 0)
-      (effects (font (size 1.27 1.27)) (justify left top) hide)
-    )
-    (property "Height" "1.73" (at 515.57 125.73 0)
-      (effects (font (size 1.27 1.27)) (justify left top) hide)
-    )
-    (property "RS Part Number" "" (at 615.57 125.73 0)
-      (effects (font (size 1.27 1.27)) (justify left top) hide)
-    )
-    (property "RS Price/Stock" "" (at 715.57 125.73 0)
-      (effects (font (size 1.27 1.27)) (justify left top) hide)
-    )
-    (property "Manufacturer_Name" "Melexis" (at 815.57 125.73 0)
-      (effects (font (size 1.27 1.27)) (justify left top) hide)
-    )
-    (property "Manufacturer_Part_Number" "MLX91220KDC-ABR-050-SP" (at 915.57 125.73 0)
-      (effects (font (size 1.27 1.27)) (justify left top) hide)
-    )
-    (pin "1" (uuid cf3c801c-d507-4020-ab87-a9ad4581b298))
-    (pin "2" (uuid 32a22b1e-7614-4536-86f5-c7b35e2725f4))
-    (pin "3" (uuid ea1415b6-a7da-4e07-9589-255710993e87))
-    (pin "4" (uuid ebdcd5dd-a704-4ede-8407-461a9eb5bfcc))
-    (pin "5" (uuid a8acbea2-87d9-4511-98e3-0b087585a501))
-    (pin "6" (uuid 1bee0a98-e232-47bc-a330-adf087a3643f))
-    (pin "7" (uuid ae057220-97d6-4f6e-b029-2936d761d195))
-    (pin "8" (uuid db970584-1480-4bbd-833c-ecc355960610))
-    (instances
-      (project "mainboard2"
-        (path "/106e5476-7cb9-4c2e-b827-12558fe0d8df"
-          (reference "IC3") (unit 1)
-        )
-        (path "/106e5476-7cb9-4c2e-b827-12558fe0d8df/3dd73459-ae44-4df8-ae56-545e20d02353"
-          (reference "IC4") (unit 1)
-        )
-      )
-      (project "MOSFET版電源管理基板"
-        (path "/608995ae-e0cf-4f60-8ee6-f47672990c68"
-          (reference "IC4") (unit 1)
         )
       )
     )
@@ -3232,7 +3224,7 @@
           (reference "#PWR024") (unit 1)
         )
         (path "/106e5476-7cb9-4c2e-b827-12558fe0d8df/3dd73459-ae44-4df8-ae56-545e20d02353"
-          (reference "#PWR056") (unit 1)
+          (reference "#PWR058") (unit 1)
         )
       )
       (project "MOSFET版電源管理基板"
@@ -3265,7 +3257,7 @@
           (reference "#PWR019") (unit 1)
         )
         (path "/106e5476-7cb9-4c2e-b827-12558fe0d8df/3dd73459-ae44-4df8-ae56-545e20d02353"
-          (reference "#PWR062") (unit 1)
+          (reference "#PWR064") (unit 1)
         )
       )
       (project "MOSFET版電源管理基板"
@@ -3276,43 +3268,10 @@
     )
   )
 
-  (symbol (lib_id "power:+5V") (at 120.65 128.524 90) (unit 1)
-    (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
-    (uuid af242ff9-5728-4cc6-97d0-738bd8fed510)
-    (property "Reference" "#PWR023" (at 124.46 128.524 0)
-      (effects (font (size 1.27 1.27)) hide)
-    )
-    (property "Value" "+5V" (at 116.84 128.524 90)
-      (effects (font (size 1.27 1.27)) (justify left))
-    )
-    (property "Footprint" "" (at 120.65 128.524 0)
-      (effects (font (size 1.27 1.27)) hide)
-    )
-    (property "Datasheet" "" (at 120.65 128.524 0)
-      (effects (font (size 1.27 1.27)) hide)
-    )
-    (pin "1" (uuid b50d940a-c5b2-4541-87e8-4d0761016b36))
-    (instances
-      (project "mainboard2"
-        (path "/106e5476-7cb9-4c2e-b827-12558fe0d8df"
-          (reference "#PWR023") (unit 1)
-        )
-        (path "/106e5476-7cb9-4c2e-b827-12558fe0d8df/3dd73459-ae44-4df8-ae56-545e20d02353"
-          (reference "#PWR070") (unit 1)
-        )
-      )
-      (project "MOSFET版電源管理基板"
-        (path "/608995ae-e0cf-4f60-8ee6-f47672990c68"
-          (reference "#PWR011") (unit 1)
-        )
-      )
-    )
-  )
-
   (symbol (lib_id "Device:R") (at 148.844 188.468 180) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid b0a74450-064c-4809-9c24-5672df135379)
-    (property "Reference" "R53" (at 151.384 188.468 90)
+    (property "Reference" "R56" (at 151.384 188.468 90)
       (effects (font (size 1.27 1.27)))
     )
     (property "Value" "10kΩ" (at 152.654 188.468 90)
@@ -3329,7 +3288,7 @@
     (instances
       (project "mainboard2"
         (path "/106e5476-7cb9-4c2e-b827-12558fe0d8df/3dd73459-ae44-4df8-ae56-545e20d02353"
-          (reference "R53") (unit 1)
+          (reference "R56") (unit 1)
         )
       )
       (project "MOSFET版電源管理基板"
@@ -3371,7 +3330,7 @@
           (reference "R10") (unit 1)
         )
         (path "/106e5476-7cb9-4c2e-b827-12558fe0d8df/3dd73459-ae44-4df8-ae56-545e20d02353"
-          (reference "R20") (unit 1)
+          (reference "R58") (unit 1)
         )
       )
       (project "MOSFET版電源管理基板"
@@ -3382,6 +3341,61 @@
       (project "30A_MD2改4"
         (path "/6e2a22aa-b8d0-47b5-aa74-4e02070980c5"
           (reference "R15") (unit 1)
+        )
+      )
+    )
+  )
+
+  (symbol (lib_id "SamacSys_Parts:ACS711ELCTR-25AB-T") (at 137.668 89.154 90) (mirror x) (unit 1)
+    (in_bom yes) (on_board yes) (dnp no)
+    (uuid b3f0b365-bc18-4a2c-b35e-a25a2957bbcc)
+    (property "Reference" "IC4" (at 152.908 103.378 0)
+      (effects (font (size 1.27 1.27)))
+    )
+    (property "Value" "ACS711ELCTR-25AB-T" (at 133.223 105.664 0)
+      (effects (font (size 1.27 1.27)))
+    )
+    (property "Footprint" "Library:ACS711ELCTR-25AB-T" (at 134.62 113.03 0)
+      (effects (font (size 1.27 1.27)) (justify left) hide)
+    )
+    (property "Datasheet" "https://www.allegromicro.com/-/media/files/datasheets/acs711-datasheet.pdf" (at 137.668 118.364 0)
+      (effects (font (size 1.27 1.27)) (justify left) hide)
+    )
+    (property "Description" "Hall-Effect Linear Current Sensor with Overcurrent Fault Output for <100 V Isolation Applications" (at 140.208 118.364 0)
+      (effects (font (size 1.27 1.27)) (justify left) hide)
+    )
+    (property "Height" "1.75" (at 142.748 118.364 0)
+      (effects (font (size 1.27 1.27)) (justify left) hide)
+    )
+    (property "RS Part Number" "" (at 145.288 118.364 0)
+      (effects (font (size 1.27 1.27)) (justify left) hide)
+    )
+    (property "RS Price/Stock" "" (at 147.828 118.364 0)
+      (effects (font (size 1.27 1.27)) (justify left) hide)
+    )
+    (property "Manufacturer_Name" "Allegro Microsystems" (at 150.368 118.364 0)
+      (effects (font (size 1.27 1.27)) (justify left) hide)
+    )
+    (property "Manufacturer_Part_Number" "ACS711ELCTR-25AB-T" (at 152.908 118.364 0)
+      (effects (font (size 1.27 1.27)) (justify left) hide)
+    )
+    (pin "1" (uuid affbe669-eed1-4d99-9484-ee6e2a6ce2c5))
+    (pin "2" (uuid 2f96253a-6971-40ed-bd23-66076e0e7a83))
+    (pin "3" (uuid e7995f7c-d482-4e68-a3be-ab02ae54aa48))
+    (pin "4" (uuid 827603ab-d7c2-4453-a76c-f5a90f1adf9e))
+    (pin "5" (uuid e59dd363-a570-4386-a796-b1105d23ca97))
+    (pin "6" (uuid 409d6a28-43b4-40d8-b700-6165e5f099f1))
+    (pin "7" (uuid a51b6ee9-82a0-4ba4-aa60-9e7510f59ef1))
+    (pin "8" (uuid 2038f70a-87e8-4134-8cca-afd93faa1ee2))
+    (instances
+      (project "mainboard2"
+        (path "/106e5476-7cb9-4c2e-b827-12558fe0d8df/3dd73459-ae44-4df8-ae56-545e20d02353"
+          (reference "IC4") (unit 1)
+        )
+      )
+      (project "30A_MD2改5"
+        (path "/6e2a22aa-b8d0-47b5-aa74-4e02070980c5"
+          (reference "IC3") (unit 1)
         )
       )
     )
@@ -3410,7 +3424,7 @@
           (reference "R4") (unit 1)
         )
         (path "/106e5476-7cb9-4c2e-b827-12558fe0d8df/3dd73459-ae44-4df8-ae56-545e20d02353"
-          (reference "R42") (unit 1)
+          (reference "R45") (unit 1)
         )
       )
       (project "MOSFET版電源管理基板"
@@ -3448,7 +3462,7 @@
           (reference "#PWR024") (unit 1)
         )
         (path "/106e5476-7cb9-4c2e-b827-12558fe0d8df/3dd73459-ae44-4df8-ae56-545e20d02353"
-          (reference "#PWR053") (unit 1)
+          (reference "#PWR055") (unit 1)
         )
       )
       (project "MOSFET版電源管理基板"
@@ -3510,40 +3524,34 @@
     )
   )
 
-  (symbol (lib_id "Device:R") (at 137.16 136.144 270) (unit 1)
+  (symbol (lib_id "power:GND") (at 140.208 141.732 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
-    (uuid c3e11453-eddd-494e-a6d7-f756bb28c086)
-    (property "Reference" "R15" (at 137.16 138.684 90)
-      (effects (font (size 1.27 1.27)))
-    )
-    (property "Value" "10kΩ" (at 137.16 136.144 90)
-      (effects (font (size 1.27 1.27)))
-    )
-    (property "Footprint" "Resistor_SMD:R_0603_1608Metric" (at 137.16 134.366 90)
+    (uuid cbfad535-e845-4e1a-94e8-f4236099bdd4)
+    (property "Reference" "#PWR024" (at 140.208 148.082 0)
       (effects (font (size 1.27 1.27)) hide)
     )
-    (property "Datasheet" "~" (at 137.16 136.144 0)
+    (property "Value" "GND" (at 140.208 146.812 0)
+      (effects (font (size 1.27 1.27)))
+    )
+    (property "Footprint" "" (at 140.208 141.732 0)
       (effects (font (size 1.27 1.27)) hide)
     )
-    (pin "1" (uuid e893129b-5542-44af-9486-69bf5311b56d))
-    (pin "2" (uuid 38a175a9-0bca-406f-a40b-dc967dc30d32))
+    (property "Datasheet" "" (at 140.208 141.732 0)
+      (effects (font (size 1.27 1.27)) hide)
+    )
+    (pin "1" (uuid 3401beb8-c6ee-4234-a381-3640f3b45e99))
     (instances
       (project "mainboard2"
         (path "/106e5476-7cb9-4c2e-b827-12558fe0d8df"
-          (reference "R15") (unit 1)
+          (reference "#PWR024") (unit 1)
         )
         (path "/106e5476-7cb9-4c2e-b827-12558fe0d8df/3dd73459-ae44-4df8-ae56-545e20d02353"
-          (reference "R23") (unit 1)
+          (reference "#PWR0151") (unit 1)
         )
       )
       (project "MOSFET版電源管理基板"
         (path "/608995ae-e0cf-4f60-8ee6-f47672990c68"
-          (reference "R11") (unit 1)
-        )
-      )
-      (project "30A_MD2改4"
-        (path "/6e2a22aa-b8d0-47b5-aa74-4e02070980c5"
-          (reference "R15") (unit 1)
+          (reference "#PWR018") (unit 1)
         )
       )
     )
@@ -3605,40 +3613,32 @@
     )
   )
 
-  (symbol (lib_id "Device:R") (at 129.54 136.144 90) (unit 1)
-    (in_bom yes) (on_board yes) (dnp no)
-    (uuid cf9bdc77-0dfe-4a63-8962-2be1e4acab74)
-    (property "Reference" "R13" (at 129.54 138.684 90)
-      (effects (font (size 1.27 1.27)))
+  (symbol (lib_id "Device:R") (at 147.828 127.254 90) (mirror x) (unit 1)
+    (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
+    (uuid ccbbf8c4-dd5f-4e7d-86c5-29c3f6b9d99c)
+    (property "Reference" "R1" (at 146.558 129.794 0)
+      (effects (font (size 1.27 1.27)) (justify left))
     )
-    (property "Value" "10kΩ" (at 129.54 136.144 90)
-      (effects (font (size 1.27 1.27)))
+    (property "Value" "1kΩ" (at 149.098 129.794 0)
+      (effects (font (size 1.27 1.27)) (justify left))
     )
-    (property "Footprint" "Resistor_SMD:R_0603_1608Metric" (at 129.54 137.922 90)
+    (property "Footprint" "Resistor_SMD:R_0603_1608Metric" (at 147.828 125.476 90)
       (effects (font (size 1.27 1.27)) hide)
     )
-    (property "Datasheet" "~" (at 129.54 136.144 0)
+    (property "Datasheet" "~" (at 147.828 127.254 0)
       (effects (font (size 1.27 1.27)) hide)
     )
-    (pin "1" (uuid a2e05723-c288-4d8c-b6cb-5deec5e773cc))
-    (pin "2" (uuid 27deb8c9-df5b-4015-8e44-3b4dada3af50))
+    (pin "1" (uuid 2ae8ed20-bb01-4451-a795-02d6f8ca3688))
+    (pin "2" (uuid 03ff86d6-4fe2-4dee-a256-7f5e052a335e))
     (instances
       (project "mainboard2"
-        (path "/106e5476-7cb9-4c2e-b827-12558fe0d8df"
-          (reference "R13") (unit 1)
-        )
         (path "/106e5476-7cb9-4c2e-b827-12558fe0d8df/3dd73459-ae44-4df8-ae56-545e20d02353"
-          (reference "R22") (unit 1)
+          (reference "R1") (unit 1)
         )
       )
-      (project "MOSFET版電源管理基板"
-        (path "/608995ae-e0cf-4f60-8ee6-f47672990c68"
-          (reference "R7") (unit 1)
-        )
-      )
-      (project "30A_MD2改4"
+      (project "30A_MD2改5"
         (path "/6e2a22aa-b8d0-47b5-aa74-4e02070980c5"
-          (reference "R15") (unit 1)
+          (reference "R11") (unit 1)
         )
       )
     )
@@ -3647,7 +3647,7 @@
   (symbol (lib_id "Device:R") (at 82.804 180.848 0) (mirror x) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid d2643991-76d7-4c68-b1d9-e22f34de4268)
-    (property "Reference" "R46" (at 80.264 180.848 90)
+    (property "Reference" "R49" (at 80.264 180.848 90)
       (effects (font (size 1.27 1.27)))
     )
     (property "Value" "10kΩ" (at 78.994 180.848 90)
@@ -3664,7 +3664,7 @@
     (instances
       (project "mainboard2"
         (path "/106e5476-7cb9-4c2e-b827-12558fe0d8df/3dd73459-ae44-4df8-ae56-545e20d02353"
-          (reference "R46") (unit 1)
+          (reference "R49") (unit 1)
         )
       )
       (project "MOSFET版電源管理基板"
@@ -3678,6 +3678,39 @@
       (project "30A_MD2改4"
         (path "/6e2a22aa-b8d0-47b5-aa74-4e02070980c5"
           (reference "R15") (unit 1)
+        )
+      )
+    )
+  )
+
+  (symbol (lib_id "power:GND") (at 145.288 122.174 0) (unit 1)
+    (in_bom yes) (on_board yes) (dnp no)
+    (uuid d5cfa728-0137-4b2a-81ec-86a0c8bbe704)
+    (property "Reference" "#PWR024" (at 145.288 128.524 0)
+      (effects (font (size 1.27 1.27)) hide)
+    )
+    (property "Value" "GND" (at 145.288 127.254 0)
+      (effects (font (size 1.27 1.27)))
+    )
+    (property "Footprint" "" (at 145.288 122.174 0)
+      (effects (font (size 1.27 1.27)) hide)
+    )
+    (property "Datasheet" "" (at 145.288 122.174 0)
+      (effects (font (size 1.27 1.27)) hide)
+    )
+    (pin "1" (uuid f1db045d-444d-4da4-a7f4-b6779eb79a63))
+    (instances
+      (project "mainboard2"
+        (path "/106e5476-7cb9-4c2e-b827-12558fe0d8df"
+          (reference "#PWR024") (unit 1)
+        )
+        (path "/106e5476-7cb9-4c2e-b827-12558fe0d8df/3dd73459-ae44-4df8-ae56-545e20d02353"
+          (reference "#PWR078") (unit 1)
+        )
+      )
+      (project "MOSFET版電源管理基板"
+        (path "/608995ae-e0cf-4f60-8ee6-f47672990c68"
+          (reference "#PWR018") (unit 1)
         )
       )
     )
@@ -3706,7 +3739,7 @@
           (reference "R6") (unit 1)
         )
         (path "/106e5476-7cb9-4c2e-b827-12558fe0d8df/3dd73459-ae44-4df8-ae56-545e20d02353"
-          (reference "R57") (unit 1)
+          (reference "R60") (unit 1)
         )
       )
       (project "MOSFET版電源管理基板"
@@ -3722,49 +3755,10 @@
     )
   )
 
-  (symbol (lib_id "Device:R") (at 137.16 131.064 270) (unit 1)
-    (in_bom yes) (on_board yes) (dnp no)
-    (uuid d85c3eb5-95cc-4ce9-ba70-2963c67976ea)
-    (property "Reference" "R14" (at 137.16 133.604 90)
-      (effects (font (size 1.27 1.27)))
-    )
-    (property "Value" "10kΩ" (at 137.16 131.064 90)
-      (effects (font (size 1.27 1.27)))
-    )
-    (property "Footprint" "Resistor_SMD:R_0603_1608Metric" (at 137.16 129.286 90)
-      (effects (font (size 1.27 1.27)) hide)
-    )
-    (property "Datasheet" "~" (at 137.16 131.064 0)
-      (effects (font (size 1.27 1.27)) hide)
-    )
-    (pin "1" (uuid b041a5be-4455-4aed-bcfc-ffc87132f287))
-    (pin "2" (uuid 2fb6a27d-1d8c-470a-9aad-62492a6ac47a))
-    (instances
-      (project "mainboard2"
-        (path "/106e5476-7cb9-4c2e-b827-12558fe0d8df"
-          (reference "R14") (unit 1)
-        )
-        (path "/106e5476-7cb9-4c2e-b827-12558fe0d8df/3dd73459-ae44-4df8-ae56-545e20d02353"
-          (reference "R28") (unit 1)
-        )
-      )
-      (project "MOSFET版電源管理基板"
-        (path "/608995ae-e0cf-4f60-8ee6-f47672990c68"
-          (reference "R12") (unit 1)
-        )
-      )
-      (project "30A_MD2改4"
-        (path "/6e2a22aa-b8d0-47b5-aa74-4e02070980c5"
-          (reference "R15") (unit 1)
-        )
-      )
-    )
-  )
-
   (symbol (lib_id "SamacSys_Parts:IRFML8244TRPBF") (at 143.764 184.15 0) (mirror y) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid d9f84a57-8a65-492d-a58d-5e717dd7fbb6)
-    (property "Reference" "Q7" (at 133.604 176.53 0)
+    (property "Reference" "Q10" (at 133.604 176.53 0)
       (effects (font (size 1.27 1.27)))
     )
     (property "Value" "IRFML8244TRPBF" (at 133.604 179.07 0)
@@ -3800,7 +3794,7 @@
     (instances
       (project "mainboard2"
         (path "/106e5476-7cb9-4c2e-b827-12558fe0d8df/3dd73459-ae44-4df8-ae56-545e20d02353"
-          (reference "Q7") (unit 1)
+          (reference "Q10") (unit 1)
         )
       )
       (project "MOSFET版電源管理基板"
@@ -3838,7 +3832,7 @@
           (reference "#PWR016") (unit 1)
         )
         (path "/106e5476-7cb9-4c2e-b827-12558fe0d8df/3dd73459-ae44-4df8-ae56-545e20d02353"
-          (reference "#PWR057") (unit 1)
+          (reference "#PWR059") (unit 1)
         )
       )
       (project "MOSFET版電源管理基板"
@@ -3871,7 +3865,7 @@
           (reference "#PWR020") (unit 1)
         )
         (path "/106e5476-7cb9-4c2e-b827-12558fe0d8df/3dd73459-ae44-4df8-ae56-545e20d02353"
-          (reference "#PWR059") (unit 1)
+          (reference "#PWR061") (unit 1)
         )
       )
       (project "MOSFET版電源管理基板"
@@ -3996,7 +3990,7 @@
   (symbol (lib_id "Device:R") (at 132.334 165.608 90) (mirror x) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid e590264e-508a-4b69-a943-26628f53d330)
-    (property "Reference" "R47" (at 132.334 163.068 90)
+    (property "Reference" "R50" (at 132.334 163.068 90)
       (effects (font (size 1.27 1.27)))
     )
     (property "Value" "10kΩ" (at 132.334 161.798 90)
@@ -4013,7 +4007,7 @@
     (instances
       (project "mainboard2"
         (path "/106e5476-7cb9-4c2e-b827-12558fe0d8df/3dd73459-ae44-4df8-ae56-545e20d02353"
-          (reference "R47") (unit 1)
+          (reference "R50") (unit 1)
         )
       )
       (project "MOSFET版電源管理基板"
@@ -4035,7 +4029,7 @@
   (symbol (lib_id "Device:R") (at 148.844 179.578 0) (mirror y) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid e59b8772-ec25-4311-b024-ccbd7df81e2a)
-    (property "Reference" "R52" (at 151.384 179.578 90)
+    (property "Reference" "R55" (at 151.384 179.578 90)
       (effects (font (size 1.27 1.27)))
     )
     (property "Value" "10Ω" (at 152.654 179.578 90)
@@ -4052,7 +4046,7 @@
     (instances
       (project "mainboard2"
         (path "/106e5476-7cb9-4c2e-b827-12558fe0d8df/3dd73459-ae44-4df8-ae56-545e20d02353"
-          (reference "R52") (unit 1)
+          (reference "R55") (unit 1)
         )
       )
       (project "MOSFET版電源管理基板"
@@ -4094,7 +4088,7 @@
           (reference "R8") (unit 1)
         )
         (path "/106e5476-7cb9-4c2e-b827-12558fe0d8df/3dd73459-ae44-4df8-ae56-545e20d02353"
-          (reference "R50") (unit 1)
+          (reference "R53") (unit 1)
         )
       )
       (project "MOSFET版電源管理基板"
@@ -4113,7 +4107,7 @@
   (symbol (lib_id "Device:R") (at 40.64 170.18 0) (mirror y) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid f2c89f54-7dfe-445c-955d-0122f9cb9311)
-    (property "Reference" "R58" (at 43.18 170.18 90)
+    (property "Reference" "R61" (at 43.18 170.18 90)
       (effects (font (size 1.27 1.27)))
     )
     (property "Value" "10kΩ" (at 44.45 170.18 90)
@@ -4130,7 +4124,7 @@
     (instances
       (project "mainboard2"
         (path "/106e5476-7cb9-4c2e-b827-12558fe0d8df/3dd73459-ae44-4df8-ae56-545e20d02353"
-          (reference "R58") (unit 1)
+          (reference "R61") (unit 1)
         )
       )
       (project "MOSFET版電源管理基板"
@@ -4201,40 +4195,34 @@
     )
   )
 
-  (symbol (lib_id "Device:R") (at 144.78 136.144 270) (unit 1)
+  (symbol (lib_id "power:GND") (at 154.94 89.154 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
-    (uuid fc6ed0a3-041e-438b-96e9-319fe4837dde)
-    (property "Reference" "R17" (at 144.78 138.684 90)
-      (effects (font (size 1.27 1.27)))
-    )
-    (property "Value" "10kΩ" (at 144.78 136.144 90)
-      (effects (font (size 1.27 1.27)))
-    )
-    (property "Footprint" "Resistor_SMD:R_0603_1608Metric" (at 144.78 134.366 90)
+    (uuid f7d5d4b3-9783-4959-b0ac-9a6741e5be81)
+    (property "Reference" "#PWR024" (at 154.94 95.504 0)
       (effects (font (size 1.27 1.27)) hide)
     )
-    (property "Datasheet" "~" (at 144.78 136.144 0)
+    (property "Value" "GND" (at 154.94 94.234 0)
+      (effects (font (size 1.27 1.27)))
+    )
+    (property "Footprint" "" (at 154.94 89.154 0)
       (effects (font (size 1.27 1.27)) hide)
     )
-    (pin "1" (uuid 823b1a21-3351-4831-8399-2983fb46d6fc))
-    (pin "2" (uuid 380034f0-4e11-4df0-921a-2a7bf282f9bf))
+    (property "Datasheet" "" (at 154.94 89.154 0)
+      (effects (font (size 1.27 1.27)) hide)
+    )
+    (pin "1" (uuid abb17a8f-df9a-40b5-9211-46ff9b45248f))
     (instances
       (project "mainboard2"
         (path "/106e5476-7cb9-4c2e-b827-12558fe0d8df"
-          (reference "R17") (unit 1)
+          (reference "#PWR024") (unit 1)
         )
         (path "/106e5476-7cb9-4c2e-b827-12558fe0d8df/3dd73459-ae44-4df8-ae56-545e20d02353"
-          (reference "R24") (unit 1)
+          (reference "#PWR0150") (unit 1)
         )
       )
       (project "MOSFET版電源管理基板"
         (path "/608995ae-e0cf-4f60-8ee6-f47672990c68"
-          (reference "R14") (unit 1)
-        )
-      )
-      (project "30A_MD2改4"
-        (path "/6e2a22aa-b8d0-47b5-aa74-4e02070980c5"
-          (reference "R15") (unit 1)
+          (reference "#PWR018") (unit 1)
         )
       )
     )

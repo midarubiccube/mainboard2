@@ -566,7 +566,7 @@
   (symbol (lib_id "power:GND") (at 130.81 95.25 90) (unit 1)
     (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
     (uuid 25d14891-23d5-4a33-8640-b26f80976768)
-    (property "Reference" "#PWR0119" (at 137.16 95.25 0)
+    (property "Reference" "#PWR0122" (at 137.16 95.25 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Value" "GND" (at 134.62 95.25 90)
@@ -582,7 +582,7 @@
     (instances
       (project "mainboard2"
         (path "/106e5476-7cb9-4c2e-b827-12558fe0d8df/33fff099-ce3b-49fb-b4f9-810325d1423e"
-          (reference "#PWR0119") (unit 1)
+          (reference "#PWR0122") (unit 1)
         )
       )
       (project "raspberrypi_canfd"
@@ -606,7 +606,7 @@
   (symbol (lib_id "power:+3.3V") (at 151.13 95.25 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
     (uuid 276ce2e8-7e76-4887-ada6-384a246b1480)
-    (property "Reference" "#PWR0122" (at 151.13 99.06 0)
+    (property "Reference" "#PWR0125" (at 151.13 99.06 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Value" "+3.3V" (at 151.13 90.17 0)
@@ -622,7 +622,7 @@
     (instances
       (project "mainboard2"
         (path "/106e5476-7cb9-4c2e-b827-12558fe0d8df/33fff099-ce3b-49fb-b4f9-810325d1423e"
-          (reference "#PWR0122") (unit 1)
+          (reference "#PWR0125") (unit 1)
         )
       )
       (project "mainboard"
@@ -636,7 +636,7 @@
   (symbol (lib_id "Device:C") (at 162.56 99.06 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid 2d2d4805-6cbf-467b-b722-54d104ba2e44)
-    (property "Reference" "C47" (at 165.481 97.8916 0)
+    (property "Reference" "C48" (at 165.481 97.8916 0)
       (effects (font (size 1.27 1.27)) (justify left))
     )
     (property "Value" "100nF" (at 165.481 100.203 0)
@@ -653,7 +653,7 @@
     (instances
       (project "mainboard2"
         (path "/106e5476-7cb9-4c2e-b827-12558fe0d8df/33fff099-ce3b-49fb-b4f9-810325d1423e"
-          (reference "C47") (unit 1)
+          (reference "C48") (unit 1)
         )
       )
       (project "pihat_cooling"
@@ -775,7 +775,7 @@
   (symbol (lib_id "power:GND") (at 130.81 100.33 90) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid 86dbd8bc-2a8a-4d7f-8910-1758056f17db)
-    (property "Reference" "#PWR0120" (at 137.16 100.33 0)
+    (property "Reference" "#PWR0123" (at 137.16 100.33 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Value" "GND" (at 134.62 100.33 90)
@@ -791,7 +791,7 @@
     (instances
       (project "mainboard2"
         (path "/106e5476-7cb9-4c2e-b827-12558fe0d8df/33fff099-ce3b-49fb-b4f9-810325d1423e"
-          (reference "#PWR0120") (unit 1)
+          (reference "#PWR0123") (unit 1)
         )
       )
       (project "raspberrypi_canfd"
@@ -815,7 +815,7 @@
   (symbol (lib_id "power:+5V") (at 140.97 76.2 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid 8a9e4f9e-95ba-4709-91f4-740bb5d8f840)
-    (property "Reference" "#PWR0121" (at 140.97 80.01 0)
+    (property "Reference" "#PWR0124" (at 140.97 80.01 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Value" "+5V" (at 141.3383 71.8756 0)
@@ -831,7 +831,7 @@
     (instances
       (project "mainboard2"
         (path "/106e5476-7cb9-4c2e-b827-12558fe0d8df/33fff099-ce3b-49fb-b4f9-810325d1423e"
-          (reference "#PWR0121") (unit 1)
+          (reference "#PWR0124") (unit 1)
         )
       )
       (project "raspberrypi_canfd"
@@ -853,7 +853,7 @@
   (symbol (lib_id "Device:R") (at 179.07 78.74 270) (unit 1)
     (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
     (uuid 9c58a663-1012-4c52-bc30-1858aefbbd23)
-    (property "Reference" "R33" (at 179.07 72.39 90)
+    (property "Reference" "R36" (at 179.07 72.39 90)
       (effects (font (size 1.27 1.27)))
     )
     (property "Value" "120Ω" (at 179.07 74.93 90)
@@ -870,7 +870,7 @@
     (instances
       (project "mainboard2"
         (path "/106e5476-7cb9-4c2e-b827-12558fe0d8df/33fff099-ce3b-49fb-b4f9-810325d1423e"
-          (reference "R33") (unit 1)
+          (reference "R36") (unit 1)
         )
       )
       (project "test"
@@ -905,7 +905,7 @@
   (symbol (lib_id "power:+3.3V") (at 102.87 78.74 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
     (uuid b186665c-b469-43b0-bcf2-9a7b382517bf)
-    (property "Reference" "#PWR0116" (at 102.87 82.55 0)
+    (property "Reference" "#PWR0119" (at 102.87 82.55 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Value" "+3.3V" (at 102.87 73.66 0)
@@ -921,7 +921,7 @@
     (instances
       (project "mainboard2"
         (path "/106e5476-7cb9-4c2e-b827-12558fe0d8df/33fff099-ce3b-49fb-b4f9-810325d1423e"
-          (reference "#PWR0116") (unit 1)
+          (reference "#PWR0119") (unit 1)
         )
       )
       (project "raspberrypi_canfd"
@@ -943,7 +943,7 @@
   (symbol (lib_id "power:GND") (at 110.49 95.25 270) (unit 1)
     (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
     (uuid bcb22e32-3036-457c-be65-346ab6164b73)
-    (property "Reference" "#PWR0118" (at 104.14 95.25 0)
+    (property "Reference" "#PWR0121" (at 104.14 95.25 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Value" "GND" (at 106.68 95.25 90)
@@ -959,7 +959,7 @@
     (instances
       (project "mainboard2"
         (path "/106e5476-7cb9-4c2e-b827-12558fe0d8df/33fff099-ce3b-49fb-b4f9-810325d1423e"
-          (reference "#PWR0118") (unit 1)
+          (reference "#PWR0121") (unit 1)
         )
       )
       (project "raspberrypi_canfd"
@@ -983,7 +983,7 @@
   (symbol (lib_id "power:GND") (at 102.87 125.73 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid c2b5ebc9-577b-4862-87e8-24d93966e23d)
-    (property "Reference" "#PWR0117" (at 102.87 132.08 0)
+    (property "Reference" "#PWR0120" (at 102.87 132.08 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Value" "GND" (at 102.87 129.54 90)
@@ -999,7 +999,7 @@
     (instances
       (project "mainboard2"
         (path "/106e5476-7cb9-4c2e-b827-12558fe0d8df/33fff099-ce3b-49fb-b4f9-810325d1423e"
-          (reference "#PWR0117") (unit 1)
+          (reference "#PWR0120") (unit 1)
         )
       )
       (project "test"
@@ -1031,7 +1031,7 @@
   (symbol (lib_id "Device:C") (at 102.87 121.92 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
     (uuid c454155d-03f0-4cc9-b26d-a2377df40227)
-    (property "Reference" "C43" (at 106.68 120.65 0)
+    (property "Reference" "C44" (at 106.68 120.65 0)
       (effects (font (size 1.27 1.27)) (justify left))
     )
     (property "Value" "0.1μF" (at 106.68 123.19 0)
@@ -1048,7 +1048,7 @@
     (instances
       (project "mainboard2"
         (path "/106e5476-7cb9-4c2e-b827-12558fe0d8df/33fff099-ce3b-49fb-b4f9-810325d1423e"
-          (reference "C43") (unit 1)
+          (reference "C44") (unit 1)
         )
       )
       (project "raspberrypi_canfd"
@@ -1072,7 +1072,7 @@
   (symbol (lib_id "power:GND") (at 151.13 110.49 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
     (uuid f3318f3c-6e87-42d6-8f84-de670d39dec6)
-    (property "Reference" "#PWR0123" (at 151.13 116.84 0)
+    (property "Reference" "#PWR0126" (at 151.13 116.84 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Value" "GND" (at 151.13 115.57 0)
@@ -1088,7 +1088,7 @@
     (instances
       (project "mainboard2"
         (path "/106e5476-7cb9-4c2e-b827-12558fe0d8df/33fff099-ce3b-49fb-b4f9-810325d1423e"
-          (reference "#PWR0123") (unit 1)
+          (reference "#PWR0126") (unit 1)
         )
       )
       (project "mainboard"
